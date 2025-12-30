@@ -1,0 +1,962 @@
+{
+  "intents": [
+    {
+      "tag": "saluto",
+      "patterns": [
+        "Ciao Gustavo",
+        "Ciao",
+        "Chi sei?",
+        "Buongiorno.",
+        "Buongiorno!",
+        "Salve",
+        "Salve!",
+        "Ehi",
+        "Ciao bot",
+        "Come va?",
+        "Come Stai?",
+        "Hello",
+        "Hey",
+        "Buonasera",
+        "Ciao Avogadro",
+        "Buondì",
+        "ciap",
+        "cia",
+        "ola"
+      ],
+      "responses": [
+        "Ciao! Questa è l'Avogadro, la nostra scuola, cosa vuoi sapere?",
+        "Ciao! Sono Gustavo,  come posso aiutarti oggi per conoscere l'Avogadro?",
+        "Benvenuto! Ti serve un consiglio per orientarti in Avogadro?",
+        "Ciao, sono Gustavo,  tutto bene? Come posso aiutarti per conoscere l'Avogadro?",
+        "Ciao, come posso aiutarti in Avogadro ?",
+        "Ciao, hai bisogno di un consiglio sull'Avogadro ?"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "aiuto",
+      "patterns": [
+        "Ciao, cosa posso fare in questa chat?",
+        "Cosa posso fare in questa chat?!",
+        "A cosa serve questa chat?",
+        "Perchè questa chat?",
+        "Cosa devo fare?",
+        "Mi aiuti?",
+        "Aiuto",
+        "Help",
+        "Di quali argomenti ti occupi?",
+        "Chi sei?",
+        "Cosa posso fare?",
+        "A cosa servi?",
+        "Cosa posso fare per te?",
+        "Cosa posso fare?",
+        "Cosa devo fare?"
+      ],
+      "responses": [
+        "Ciao! Sono Gustavo, un bot automatico e posso aiutarti a conoscere meglio la nostra scuola",
+        "Benvenuto! Ti serve un consiglio?",
+        "Ciao, tutto bene? Come posso aiutarti per orientarti?",
+        "Ciao, sono GustAvo, come posso aiutarti per conoscere meglio la nostra scuola?",
+        "Ciao, cosa vuoi sapere della nostra scuola?"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "informatica_perchè",
+      "patterns": [
+        "Perchè scegliere informatica?",
+        "Perché fare la specializzione  informatica?",
+        "Perchè informatica?",
+        "Perché è importante informatica?",
+        "Motivi per scegliere informatica",
+        "Perché dovrei scegliere informatica?",
+        "cosa posso fare dopo informatica?"
+      ],
+      "responses": [
+        "L'informatica è molto importante nel mondo del lavoro",
+        "Scegliere informatica offre parecchie possibilità di lavoro",
+        "Gli informatici sono molto richiesti in varie aziende"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "studiare_informatica",
+      "patterns": [
+        "Cosa si studia ad informatica?",
+        "Cosa si insegna ad informatica?",
+        "Percorso di studi di informatica?",
+        "Quali materie si studiano ad informatica?",
+        "Quale il programma di informatica ",
+        "Quali materie informatica",
+        "cosa posso fare dopo informatica?"
+      ],
+      "responses": [
+        "Ti consiglio di navigare sul sito della scuola e scegliere la specializzazione informatica per avere tutte le informazioni"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "dipartimenti",
+      "patterns": [
+        "Quali dipartimenti ci sono?",
+        "Quali dipartimenti avete?",
+        "Quali dipartimenti?",
+        "Quanti dipartimenti?",
+        "Dipartimenti"
+      ],
+      "responses": [
+        "In Avogadro ci sono 4 dipartimenti: Informatica, Meccanica, Elettrotecnica, Liceo",
+        "In Avogadro ci sono i dipartimenti di  Informatica, Meccanica, Elettrotecnica, Liceo",
+        "Ci  sono i  seguenti dipartimenti:  Informatica, Meccanica, Elettrotecnica, Liceo"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "indirizzi",
+      "patterns": [
+        "Quali indirizzi ci sono?",
+        "Quali indirizzi avete?",
+        "Quali indirizzi?",
+        "Quanti indirizzi?",
+        "indirizzi",
+        "Quali specializzazioni ci sono?",
+        "Quali specializzazioni avete?",
+        "Quali specializzazioni?",
+        "Quante specializzazioni?",
+        "specializzazioni",
+        "Cosa si insegna a scuola?",
+        "Quali insegnamenti?",
+        "Cosa si impara a scuola?",
+        "imparare?",
+        "cosa si studia?"
+      ],
+      "responses": [
+        "In Avogadro ci sono 4 indirizzi: Informatica e telecomunicazioni, Meccanica, Meccatronica ed Energia, Elettrotecnica ed Elettronica, Liceo scientifico scienze applicate, Cambridge international school",
+        "In Avogadro gli indirizzi di studio sono: Informatica e telecomunicazioni, Meccanica, Meccatronica ed Energia, Elettrotecnica ed Elettronica, Liceo scientifico scienze applicate, Cambridge international school",
+        "Ci  sono i  seguenti indirizzi di studio:  Informatica e telecomunicazioni, Meccanica, Meccatronica ed Energia, Elettrotecnica ed Elettronica, Liceo scientifico scienze applicate, Cambridge international school"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "preside",
+      "patterns": [
+        "Come si chiama il dirigente scolastico?",
+        "Come si chiama il preside?",
+        "Come si chiama la preside?",
+        "preside?",
+        "dirigente?",
+        "Chi è il dirigente scolastico?",
+        "Chi è il preside?",
+        "quale nome la preside",
+        "nome preside",
+        "qual'è il nome della preside?",
+        "nome della preside",
+        "chi dirige la scuola?",
+        "chi è a capo della scuola?"
+      ],
+      "responses": [
+        "Il dirigente si chiama Anna Luisa Chiappetta",
+        "La Preside si chiama Anna Luisa Chiappetta",
+        "La Preside è l'ing. Anna Luisa Chiappetta",
+        "La dirigente scolastica è l'ing. Anna Luisa Chiappetta"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "vicepresidenza",
+      "patterns": [
+        "Come si chiama il vicepreside?",
+        "Come si chiama la vicepreside?",
+        "Motivi per scegliere informatica",
+        "vicario?",
+        "vicepreside?",
+        "vice preside?",
+        "Chi è il dirigente vicario?",
+        "Chi è il vicepreside?",
+        "Chi è la vicepreside?",
+        "chi gestisce la parte organizzativa?"
+      ],
+      "responses": [
+        "La vicepreside si chiama Laura Panaro",
+        "La vicepreside si chiama Laura Panaro",
+        "La vicepreside è la prof.ssa Laura Panaro"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "dsga",
+      "patterns": [
+        "Come si chiama il dsga?",
+        "Come si chiama il direttore amministrativo?",
+        "Chi è a capo dell'amministrazione?",
+        "Amministrazione?",
+        "direttore amministrazione?"
+      ],
+      "responses": [
+        "il D.S.G.A. è il dott. Paolo Astuti",
+        "il Direttore amministrativo è il dott. Paolo Astuti",
+        "La direzione amministrativa è coordinata dal dott. Paolo Astuti"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "direzioneTecnica",
+      "patterns": [
+        "Come si chiama il responsabiule dell'ufficio tecnico?",
+        "Chi dirige l'ufficio tecnico?",
+        "Come funziona l'ufficio tecnico?",
+        "Chi gestisce la sicurezza?",
+        "Quale referente tecnico?"
+      ],
+      "responses": [
+        "L'ufficio tecnico è coordinato dal prof. Antonio Mandarano",
+        "A capo dell'ufficio tecnico è il prof. Antonio Mandarano",
+        "Il prof. Antonio Mandarano coordina l'ufficio tecnico e si occupa della sicurezza"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "QuantiStudenti",
+      "patterns": [
+        "Quanti studenti?",
+        "Numero di studenti?",
+        "Quanti alunni?",
+        "Numero di alunni?",
+        "Quanti studenti ci sono?",
+        "Quanti iscritti",
+        "numero di iscritti"
+      ],
+      "responses": [
+        "Nella nostra scuola ci sono circa 1300 studenti",
+        "Sono iscritti circa 1300 studenti"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "QuantiDocenti",
+      "patterns": [
+        "Quanti docenti?",
+        "Numero di docenti?",
+        "Quanti docenti ci sono?",
+        "Quanti insegnanti",
+        "numero di insegnanti",
+        "Quanti professori",
+        "numero di professori"
+      ],
+      "responses": [
+        "Nella nostra scuola ci sono circa 120 docenti",
+        "Nella nostra scuola ci sono circa 120 insegnanti",
+        "Nella nostra scuola ci sono circa 120 professori",
+        "Insegnano circa 120 docenti",
+        "Insegnano circa 120 docenti"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "QuanteSezioni",
+      "patterns": [
+        "Quante sezioni ci sono?",
+        "Numero di sezioni?",
+        "Sezioni?"
+      ],
+      "responses": [
+        "Puoi essere più preciso?",
+        "Nella nostra scuola ci sono quattro sezioni di informatica, tre di liceo, una di meccanico ed una di elettrotecnica. Esiste anche un progetto Cambridge in lingua inglese e un corso serale"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "Cambridge",
+      "patterns": [
+        "Cosa si fa al Cambridge?",
+        "Cambridge?",
+        "Corso Cambridge?",
+        "Progetto Cambridge?",
+        "Corsi in lingua inglese?",
+        "contatti",
+        "cambridge",
+        "inglese",
+        "lingua straniera"
+      ],
+      "responses": [
+        "Esiste un progetto  Cambridge del liceo e tecnico Informtico che svolge lezioni in lingua inglese",
+        "Nella nostra scuola è attivo un progetto  Cambridge in lingua inglese, per ora per Liceo e Tecnico Informatico",
+        "il programma Cambridge arricchisce  il curriculum italiano con un approccio metodologico che si distingue dall’offerta formativa nazionale. Nella nostra scuola, negli indirizzi LICEO SCIENTIFICO opz. SCIENZE APPLICATE CAMBRIDGE e TECNICO INFORMATICA E TELECOMUNICAZIONI CAMBRIDGE, materie come la Biologia, la Chimica, la Fisica, l’Informatica verranno insegnate in Inglese seguendo i programmi corrispondenti Cambridge (cosiddetti syllabus).",
+        "per sapere di più sul progetto Cambridge vai sul sito della scuola"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "Serale",
+      "patterns": [
+        "Cosa si fa al Serale?",
+        "Sezione serale?",
+        "C'è un corso serale?",
+        "Cos'è il serale?",
+        "Cosa si fa al serale?",
+        "serale?",
+        "Studenti lavoratori"
+      ],
+      "responses": [
+        "Esiste un percorso di studi serale per studenti lavoratori  che comprende il biennio e le specializzazioni di Informatica e telecomunicazioni, Elettrotecnica ed Elettronica, Meccanica e Meccatronica",
+        "Nella nostra scuola è attivo un corso serale per studenti lavoratori",
+        "per sapere di più sul corso serale  vai sul sito della scuola"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "PCTO",
+      "patterns": [
+        "Si fanno progetti?",
+        "Progetti?",
+        "Quanti progetti",
+        "PCTO",
+        "Formazione lavoro",
+        "FLS",
+        "Alternanza scuola lavoro",
+        "Mondo del lavoro",
+        "Orientamento",
+        "quali progetti stranieri"
+      ],
+      "responses": [
+        "Sono tanti i progetti che si realizzano nella nostra scuola",
+        "Moltissimi progetti vengono realizzati per avvicinare gli studenti al mondo del lavoro",
+        "Molti i progetti in collaborazione con Aziende, associazioni e mondo dell'università per orientare al mondo del lavoro e alle scelte future"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "nome",
+      "patterns": [
+        "Perchè si chiama Avogadro?",
+        "da cosa deriva il nome della scuala?",
+        "nome della scuola?",
+        "perchè questo nome?",
+        "nome?",
+        "perchè Avogadro?",
+        "perchè nome Avogadro?",
+        "etimologia"
+      ],
+      "responses": [
+        "La scuola è dedicata ad Amedeo Avogadro, famoso fisico e chimico",
+        "La scuola prende il nome da Amedeo Avogadro (1776-1856) è stato un fisico e chimico italiano, noto per la sua Legge di Avogadro (1811)"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "storia",
+      "patterns": [
+        "Quando è stata fondata la scuola?",
+        "Quando è stata fondato l'Avogadro?",
+        "Quando è stata fondata?",
+        "A quando risale la storia della scuola??",
+        "storia?",
+        "La storia?",
+        "risale?",
+        "Quanti anni ha?"
+      ],
+      "responses": [
+        "La scuola è stata fondata alla fine dell'ottocento"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "posizione",
+      "patterns": [
+        "Come raggiungere la scuola?",
+        "Come si raggiunge l'Avogadro?",
+        "Quali mezzi devo prendere per venire a scuola?",
+        "Quali fermate?",
+        "Indirizzo?",
+        "Dove si trova?"
+      ],
+      "responses": [
+        "La scuola si trova in corso S.Maurizio 8, in pieno centro di Torino",
+        "La scuola si trova in corso S.Maurizio 8,e facilmente raggiungibile con treno, tram e bus",
+        "La scuola si trova in corso S.Maurizio 8,e facilmente raggiungibile con treno, tram e bus, c'è anche un ampio cortile con posti per biciclette e monopattini"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mobilità",
+      "patterns": [
+        "Come è gestita la mobilità?",
+        "mobilità sostenibile?",
+        "Come venire a scuola in modo sostenibile?",
+        "Posso venire in bicicletta?",
+        "Posso venire in macchina?",
+        "C'è un parcheggio di auto?",
+        "C'è un parcheggio di biciclette?",
+        "se vengo in bici o monopattini?"
+      ],
+      "responses": [
+        "La scuola si trova nel centro della città e c'è un parcheggio bici all'interno",
+        "Per venire a scuola si consiglia una mobilità sostenibile (principalmente mezzi pubblici e bicicletta)",
+        "La scuola promuove la mobilità sostenibile.C'è una ampio parcheggio di biciclette sia all'interno che all'esterno"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "grazie",
+      "patterns": [
+        "Grazie",
+        "Grazie!",
+        "Grazie mille",
+        "Grazie per l'aiuto",
+        "Grazie, a dopo",
+        "si grazie"
+      ],
+      "responses": [
+        "Grazie a te! Quando vuoi altre informazioni chiamami!",
+        "Di nulla! Se vuoi altre informazioni chiamami ancora!"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "fine",
+      "patterns": [
+        "Grazie, basta così",
+        "In Avogadro ci sono 4 dipartimenti: Informatica, Meccanica, Elettrotecnica, Liceo",
+        "Grazie, finito!",
+        "Ok, a presto",
+        "Basta così",
+        "Ciao, ho finito",
+        "Arrivederci",
+        "Buona giornata",
+        "Grazie, a dopo"
+      ],
+      "responses": [
+        "Grazie a te! Spero che l'Avogadro possa piacerti",
+        "Ciao! Torna presto per altri consigli.",
+        "Di nulla! Se vuoi continua pure a chiedere!",
+        "Arrivederci! Ricorda di passare a trovarci!"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola",
+      "patterns": [
+        "Hai una mappa della scuola?",
+        "Mappa scuola",
+        "Come trovo le aule?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa interattiva della scuola qui: <a href=\"https://openlevelup.net/#18/45.07061/7.69247 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata della scuola: <a href=\"https://openlevelup.net/#18/45.07061/7.69247 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_aulamagna",
+      "patterns": [
+        "Hai una mappa dell'aula magna?",
+        "Mappa aula magna"
+      ],
+      "responses": [
+        "Puoi vedere l'aula magna qui: <a href=\"https://openlevelup.net/?l=1#21/45.07059/7.69218 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata dell'aula magna: <a href=\"https://openlevelup.net/?l=1#21/45.07059/7.69218 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_bar",
+      "patterns": [
+        "Hai una mappa del bar?",
+        "Mappa bar",
+        "bar",
+        "mensa",
+        "Come trovo la mappa della mensa o il bar?",
+        "dove trovo la mappa della mensa scolastica?",
+        "come trovo la mappa della mensa?"
+      ],
+      "responses": [
+        "Puoi vedere il bar qui: <a href=\"https://openlevelup.net/?l=1#21/45.07075/7.69230 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del bar: <a href=\"https://openlevelup.net/?l=1#21/45.07075/7.69230 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_sala_insegnanti",
+      "patterns": [
+        "Hai una mappa della sala insegnanti?",
+        "Hai una mappa della sala docenti?",
+        "Mappa sala insegnanti",
+        "Mappa sala docenti",
+        "hai la mappa della aula docenti?",
+        "hai una mappa dell'aula docenti?"
+      ],
+      "responses": [
+        "Puoi vedere la sala docenti qui: <a href=\"https://openlevelup.net/?l=0#21/45.07101/7.69250 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata della sala docenti: <a href=\"https://openlevelup.net/?l=0#21/45.07101/7.69250 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_biblioteca",
+      "patterns": [
+        "Hai una mappa della biblioteca?",
+        "Dove si trova la biblioteca",
+        "Hai una mappa della biblioteca?",
+        "Mappa biblioteca",
+        "Mappa biblio teca",
+        "Mappa libreria ",
+        "mappa biblioteca",
+        "hai una mappa della bibloteca?",
+        "mappa dove ci sono libri?"
+      ],
+      "responses": [
+        "Puoi vedere la bibioteca qui: <a href=\"https://openlevelup.net/?l=0#21/45.07078/7.69243 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata della biblioteca: <a href=\"https://openlevelup.net/?l=0#21/45.07078/7.69243 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_terra",
+      "patterns": [
+        "Piano terra",
+        "Hai una mappa del piano terra?",
+        "Hai la mappa del piano terra?",
+        "Come trovo il piano terra?",
+        "cosa c'è al piano terra?",
+        "aule del piano terra?",
+        "dove trovo le aule del  piano terra?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del piano terra qui: <a href=\"https://openlevelup.net/?l=0#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del piano terra: <a href=\"https://openlevelup.net/?l=0#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_primo",
+      "patterns": [
+        "Piano primo",
+        "Primo piano",
+        "1. piano",
+        "Hai una mappa del 1.o piano?",
+        "Hai una mappa del primo piano?",
+        "Hai la mappa del primo piano?",
+        "Come trovo il primo piano?",
+        "cosa c'è al primo piano ?",
+        "aule del primo piano?",
+        "dove trovo le aule del  primo piano?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del primo piano  qui: <a href=\"https://openlevelup.net/?l=1#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del primo piano : <a href=\"https://openlevelup.net/?l=1#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_secondo",
+      "patterns": [
+        "Piano secondo",
+        "secondo piano",
+        "2. piano",
+        "Hai una mappa del 2.o piano?",
+        "Hai una mappa del secondo piano?",
+        "Hai la mappa del secondo piano?",
+        "Come trovo il secondo piano?",
+        "cosa c'è al secondo piano ?",
+        "aule del secondo piano?",
+        "dove trovo le aule del secondo piano?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del secondo piano  qui: <a href=\"https://openlevelup.net/?l=2#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del secondo piano : <a href=\"https://openlevelup.net/?l=2#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_terzo",
+      "patterns": [
+        "Piano terzo",
+        "terzo piano",
+        "3. piano",
+        "Hai una mappa del 3.o piano?",
+        "Hai una mappa del terzo piano?",
+        "Hai la mappa del terzo piano?",
+        "Come trovo il terzo piano?",
+        "cosa c'è al terzo piano ?",
+        "aule del terzo piano ?",
+        "dove trovo le aule del  terzo piano?",
+        "ciap"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del terzo piano  qui: <a href=\"https://openlevelup.net/?l=3#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del terzo piano : <a href=\"https://openlevelup.net/?l=3#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_quarto",
+      "patterns": [
+        "Piano quarto",
+        "quarto piano",
+        "4. piano",
+        "Hai una mappa del 4.o piano?",
+        "Hai una mappa del quarto piano?",
+        "Hai la mappa del quarto piano?",
+        "Come trovo il quarto piano?",
+        "cosa c'è al quarto piano ?",
+        "aule del quarto piano ?",
+        "dove trovo le aule del quarto piano?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del quarto piano  qui: <a href=\"https://openlevelup.net/?l=4#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del quarto piano : <a href=\"https://openlevelup.net/?l=4#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_palestra",
+      "patterns": [
+        "mappa Palestra",
+        "Mappa della palestra",
+        "Hai una mappa della palestra?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa della palestra qui: <a href=https://openlevelup.net/?l=0#21/45.07062/7.69238 \"\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata della palestra : <a href=\"https://openlevelup.net/?l=0#21/45.07062/7.69238 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "avogreen",
+      "patterns": [
+        "progetti ambientali?",
+        "fate qualcosa per l'ambiente?",
+        "ambiente?",
+        "ecologia?",
+        "salvaguardia ambiente?",
+        "mobilità?",
+        "cosa fate per la mobilità?",
+        "cosa fate per la sostenibilità?",
+        "sostenibilità?",
+        "come migliorare l'ambiente?",
+        "salvaguardia ambiente?"
+      ],
+      "responses": [
+        "In Avogadro c'è il progetto AVOGREEN, per una scuola sostenibile",
+        "Grazie al  progetto AvoGreen la scuola fa parte della rete delle scuole eco attive della Regione Piemonte",
+        "Il progetto AvoGreen si occupa di rendere la scuola più sostenibile"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "sitoWeb",
+      "patterns": [
+        "Qual'è il sito Web della scuola?",
+        "sito web?",
+        "quale il sito della scuola?",
+        "web?"
+      ],
+      "responses": [
+        "Puoi consultare il sito web della scuola: <a href=\"https://www.itisavogadro.edu.it \" target=\"_blank\">Apri il sito Web</a>",
+        "Ecco il sito Web della scuola: <a href=\"https://www.itisavogadro.edu.it \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "orari",
+      "patterns": [
+        "Quali gli orari?",
+        "Calendario scolastico e orari?",
+        "Orario scolastico?",
+        "Orari",
+        "Ore?",
+        "A che ora si va a scuola?",
+        "A che ora si entra?"
+      ],
+      "responses": [
+        "Le lezioni del mattino iniziano alle 8 e normalmente finiscono alle 13, ma vi sono alcune classi che rientrano il pomeriggio",
+        "Normalmente dalle 8 alle 13 con eventuali rientri al pomeriggio dalle 14 alle 17",
+        "Normalmente dalle 8 alle 13 ma puoi consultare gli orari sul sito Web della scuola"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "telefono",
+      "patterns": [
+        "numero di telefono della scuola",
+        "telefono",
+        "quale il numrp di telefono"
+      ],
+      "responses": [
+        "Telefono: +390118153611"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "sito web",
+      "patterns": [
+        "quale il sito web?"
+      ],
+      "responses": [
+        "https://www.itisavogadro.edu.it/"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "mail",
+      "patterns": [
+        "quale l'indirizzo mail?",
+        "indirizzo mail",
+        "mail",
+        "quale la mail?",
+        "la mail della scuola?"
+      ],
+      "responses": [
+        "tois05100c@istruzione.it"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "pec",
+      "patterns": [
+        "quale la PEC?",
+        "qual'è la pec della scuola?",
+        "la pec della scuola?",
+        "la pec dell'avogadro?"
+      ],
+      "responses": [
+        "tois05100c@pec.istruzione.it"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "codiceFiscale",
+      "patterns": [
+        "quale il codice fiscale?",
+        "codice fiscale",
+        "sai qual'è il codice fiscale?"
+      ],
+      "responses": [
+        "Codice fiscale: 97550230011"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "codiceMeccanografico",
+      "patterns": [
+        "quale il codice meccanografico",
+        "quale codice meccanografico ha la scuola?",
+        "qual'è il suo codice meccanografico?"
+      ],
+      "responses": [
+        "il codice meccanografico è: tois05100c"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "insegnanti",
+      "patterns": [
+        "quanti sono gli insegnanti?",
+        "come sono gli insegnanti?"
+      ],
+      "responses": [
+        "Gli insegnanti della scuola sono circa 130 e tra di loro ci sono tanti professionisti  che insegnano con passione e impegno"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "MaschiFemmine",
+      "patterns": [
+        "Quanto maschi e quante femmine?"
+      ],
+      "responses": [
+        "Al liceo vi sono più o meno metà maschi e metà femmine, all'ITIS sono in maggioranza i maschi ma speriamo che in futuro questa proporzione si modifichi a favore delle ragazze"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "sbocchiProfessionali",
+      "patterns": [
+        "quali gli sbocchi professionali?",
+        "quali sono gli sbocchi?"
+      ],
+      "responses": [
+        "Diplomarsi all'Avogadro garantisce molte  opportunità , sia per chi vorrà cercare un lavoro, che per chi vorrà proseguire con gli studi universitari o scuole post diploma"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "contatti",
+      "patterns": [
+        "come posso contattare la scuola",
+        "quali i contatti della scuola"
+      ],
+      "responses": [
+        "per contattare la scuola puoi chiamare il numero di telefono 0118153611 o inviare una mail a tois05100c@istruzione.it"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "generico",
+      "patterns": [
+        "come si sta in avogadro?",
+        "come si sta",
+        "com'è la scuola?",
+        "com'è?"
+      ],
+      "responses": [
+        "La scuola è una delle più antiche copme storia ma anche tra le più moderne come attività didattiche e laboratoriali. E' riconosciuta come una della migliori scuole di Torino e provincia"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "bar",
+      "patterns": [
+        "dove si trova il bar?",
+        "come raggiungo il bar?",
+        "dov'è il bar?",
+        "come faccio a raggiungere la mensa?",
+        "dove posso trovare da mangiare?",
+        "c'è un bar?",
+        "c'è una mensa?"
+      ],
+      "responses": [
+        "Al primo piano, prendi a destra, 20 metri e trovi il bar e la mensa della scuola"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "aulamagna",
+      "patterns": [
+        "dove si trova l'aula magna?",
+        "come raggiungo l'aula magna?",
+        "dov'è l'aula magna",
+        "come faccio a raggiungere l'aula magna?",
+        "dove posso trovare la sala conferenze?",
+        "c'è una aula magna",
+        "c'è aula magna?",
+        "Aula magna",
+        " Sala Rattazzi"
+      ],
+      "responses": [
+        "Al primo piano, prendi a destra, 20 metri, subito dopo il bar trovi la sala Rattazzi (aula Magna)",
+        "Al primo piano, a destra subito dopo il bar trovi l'aula magna, sala Rattazzi"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "palestra",
+      "patterns": [
+        "dove si trova la palestra?",
+        "come raggiungo la palestra?",
+        "dov'è la palestra?",
+        "come faccio a raggiungere la palestra?",
+        "dove posso trovare la palestra?",
+        "c'è una palestra?",
+        "c'è palestra?",
+        "Palestra",
+        "dove si fa ginnastica?",
+        "dove si fa sport?",
+        "dove si fa educazione fisica?",
+        "dove si può fare sport?"
+      ],
+      "responses": [
+        "Al piano terra, dal centralino vai in fondo al corridoio, poi a destra ci sono le due palestre",
+        "Al piano terra, vai in fondo al corridoio, poi a destra ci sono le due palestre della scuola"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "salaInsegnanti",
+      "patterns": [
+        "dove si trova la sala insegnanti",
+        "come raggiungo la sala insegnanti?",
+        "dove si trova la sala docenti",
+        "come raggiungo la sala docenti?",
+        "dove si trova la aula insegnanti",
+        "come raggiungo la aula insegnanti?",
+        "dov'è la sala insegnanti?",
+        "come faccio a raggiungere la sala insegnanti?",
+        "dove posso trovare la sala insegnanti?",
+        "c'è una sala insegnanti?",
+        "c'è sala insegnanti?",
+        "Sala insegnanti",
+        "aula docenti",
+        "sala docenti",
+        "dove posso trovare gli insegnanti?",
+        "dove stanno i docenti?",
+        "dove stanno gli insegnanti?"
+      ],
+      "responses": [
+        "Al piano terra, dopo il centralino vai nel corridoio, dove trovi le colonne storiche gira subito a destra e trovi l'aula docenti",
+        "Dall'ingresso, dopo il centralino trovi uno spiazzo con le colonne storiche. Gira subito a destra e trovi l'aula docenti"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "estero",
+      "patterns": [
+        "ci sono possibilità di studio all'estero?",
+        "vi sono progetti erasmus?",
+        "si fanno progetti erasmus?",
+        "si fanno progetti internazionali?",
+        "la scuola è accreditata Erasmus?",
+        "internazionale",
+        "internazionali"
+      ],
+      "responses": [
+        "A scuola vi sono parecchie possibilità per progetti e studio all'estero",
+        "La scuola è accreditata per progetti Erasmus all'estero",
+        "La scuola effettua parecchi progetti internazionali Erasmus"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "biblioteca",
+      "patterns": [
+        "dov'è la biblioteca?"
+      ],
+      "responses": [
+        "Al piano terra, dal centralino vai avanti 20 metri e poi a destra"
+      ],
+      "pending": false
+    },
+    {
+      "tag": "mappa_vicepresidenza",
+      "patterns": [
+        "dove si trova la vicepresidenza?",
+        "dov'è la vicepreside?",
+        "dov'è la vicepresidenza?",
+        "dov'è l'ufficio della vicepreside?",
+        "dove si trova la vicepreside?"
+      ],
+      "responses": [
+        "al piano terra, all'ingresso corridoio a sinistra e si trovano gli uffici della vicepresidenza"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "mappa_didattica",
+      "patterns": [
+        "dove si trova la segreteria didattica?"
+      ],
+      "responses": [
+        "al piano terra, all'ingresso corridoio a destra e si trovano gli uffici della didattica"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "mappa_presidenza",
+      "patterns": [
+        "dove si trova l'ufficio della presidenza?",
+        "come posso raggiungere il preside?",
+        "come posso trovare il preside?",
+        "come posso raggiungere la preside?",
+        "come posso trovare la preside?",
+        "dov'è l'ufficio della presidenza?",
+        "dov'è l'ufficio della preside?",
+        "dov'è l'ufficio del preside?",
+        "dove trovo il preside?"
+      ],
+      "responses": [
+        "consiglio di chiedere al centralino e prenotare un appuntamento"
+      ],
+      "author": "web-admin"
+    }
+  ]
+}
