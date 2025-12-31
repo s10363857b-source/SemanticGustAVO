@@ -3,17 +3,17 @@ Riassunto modifiche
 
 MODIFICHE ai CAMPI:
 
-Prepara risposte e embedding
+#Prepara risposte e embedding
 
-Classificazione intent con embedding
+#Classificazione intent con embedding
 
-Chat endpoint
+#Chat endpoint
 
-Avvio app
+#Avvio app
 
-AGGIUNTA
+AGGIUNTA:
 
-Logica chatbot
+#Logica chatbot
 
 
 Ho apportato delle migliorie al riguardo della strutturazione della logica embedding, con la tecnologia FAISS (Facebook AI Similarity Search) una libreria open source per la ricerca di similarità e il clustering di vettori
