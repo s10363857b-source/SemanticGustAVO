@@ -2,27 +2,27 @@ SemanticGustAVO
 Riassunto modifiche
 
 MODIFICHE ai BLOCCHI:
-# =========================
-# Prepara risposte e embedding
-# =========================
+<=========================
+Prepara risposte e embedding
+<=========================
 
-# =========================
-# Classificazione intent con embedding
-# =========================
+<=========================
+Classificazione intent con embedding
+<=========================
 
-# =========================
-# Chat endpoint
-# =========================
+<=========================
+Chat endpoint
+<=========================
 
-# =========================
-# Avvio app
-# =========================
+<=========================
+Avvio app
+<=========================
 
 AGGIUNTA
 
-# =========================
-# Logica chatbot
-# =========================
+<=========================
+Logica chatbot
+<=========================
 
 Ho apportato delle migliorie al riguardo della strutturazione della logica embedding, con la tecnologia FAISS (Facebook AI Similarity Search) una libreria open source per la ricerca di similarità e il clustering di vettori
 è stato aggiunta la possibilità di caricare un file intent.faiss con i dati emebdding elaborati senza doverli ricalcolare ad ogni avvio, se il file non esiste o non trovato il programma ne creerà uno nuovo e allo stesso tempo
@@ -51,10 +51,10 @@ Riga 36-90: Ristrutturazione della logica embedding per avere un salvataggio sta
 Riga 102-118: Ristrutturazione di classificazione intent con embedding, la logica rimane la stessa si continua a utilizzare il cosine similarity;
               Equivalente codice originale riga 59-85
 
-Riga 125-152 (Nuova aggiunta): Logica di risposta estratto dall'originale @app(/chat) per poter permettere l'implementazione della modalità console;
+Riga 129-156 (Nuova aggiunta): Logica di risposta estratto dall'originale @app(/chat) per poter permettere l'implementazione della modalità console;
                                Equivalente codice originale riga 135-174
 
-Riga 203-218: Ristrutturazione del app.route(/chat);
+Riga 207-222: Ristrutturazione del app.route(/chat);
               
-Riga 227-253: Implementazione della modalità console;
+Riga 231-257: Implementazione della modalità console;
               Equivalente codice originale riga 181-182
