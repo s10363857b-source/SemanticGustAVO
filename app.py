@@ -6,9 +6,9 @@ from flask_cors import CORS
 import json
 import random
 import os
+import faiss
 
-from sentence_transformers import SentenceTransformer, util
-import torch
+from sentence_transformers import SentenceTransformer
 
 # =========================
 # Flask setup
@@ -22,6 +22,9 @@ CORS(app)
 with open("intents.json", "r", encoding="utf-8") as f:
     intents = json.load(f)["intents"]
 
+responses = {}
+for intent in intents:
+    responses[intent["tag"]] = intent["responses"]
 # =========================
 # Carica modello embedding
 # =========================
@@ -30,21 +33,61 @@ embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 # =========================
 # Prepara risposte e embedding
 # =========================
-responses = {}
-intent_embeddings = []
+FAISS_INDEX_PATH = "intents.faiss"
+METADATA_PATH = "intents_meta.json"
+# Se il file contenente emebedding esiste già, lo si carica evitando sprechi di risorse, sennò lo si crea sul momento creando il file
+if os.path.exists(FAISS_INDEX_PATH) and os.path.exists(METADATA_PATH):
+    print("Caricamento indice FAISS esistente")
 
-for intent in intents:
-    tag = intent["tag"]
-    responses[tag] = intent["responses"]
+    index = faiss.read_index(FAISS_INDEX_PATH)
 
-    for pattern in intent["patterns"]:
-        intent_embeddings.append({
-            "tag": tag,
-            "text": pattern,
-            "embedding": embedding_model.encode(
-                pattern, convert_to_tensor=True
-            )
-        })
+    with open(METADATA_PATH, "r", encoding="utf-8") as f:
+        metadata = json.load(f)
+else:
+    print("Indice FAISS non trovato, creazione indice FAISS...")
+
+    texts = []
+    metadata = []
+
+    responses = {}
+
+    for intent in intents:
+        tag = intent["tag"]
+        responses[tag] = intent["responses"]
+
+        for pattern in intent["patterns"]:
+            texts.append(pattern)
+            metadata.append({
+                "tag": tag,
+                "text": pattern
+            })
+
+    # Embedding
+    embeddings = embedding_model.encode(
+        texts,
+        convert_to_numpy=True,
+        show_progress_bar=True
+    ).astype("float32")
+
+    # Dimensione embedding
+    dim = embeddings.shape[1]
+
+    # Indice FAISS (cosine similarity)
+    index = faiss.IndexFlatIP(dim)
+
+    # Normalizzazione per cosine similarity
+    faiss.normalize_L2(embeddings)
+
+    # Aggiunta vettori
+    index.add(embeddings)
+
+    # Salvataggio su disco
+    faiss.write_index(index, FAISS_INDEX_PATH)
+
+    with open(METADATA_PATH, "w", encoding="utf-8") as f:
+        json.dump(metadata, f, ensure_ascii=False, indent=2)
+
+    print("Indice FAISS creato e salvato!")
 
 # =========================
 # Cronologia conversazioni
@@ -58,31 +101,56 @@ MAX_HISTORY = 10       # massimo messaggi salvati
 # =========================
 def classify_intent_embedding(user_message, threshold=0.5):
     user_embedding = embedding_model.encode(
-        user_message, convert_to_tensor=True
-    )
+        [user_message]
+    ).astype("float32")
 
-    best_score = 0
-    best_tag = None
+    faiss.normalize_L2(user_embedding)
 
-    for item in intent_embeddings:
-        score = util.cos_sim(
-            user_embedding, item["embedding"]
-        ).item()
+    scores, indices = index.search(user_embedding, k=1)
 
-        if score > best_score:
-            best_score = score
-            best_tag = item["tag"]
+    best_score = scores[0][0]
+    best_idx = indices[0][0]
 
     if best_score < threshold:
         return None, best_score
 
+    best_tag = metadata[best_idx]["tag"]
     return best_tag, best_score
-
 
 def generate_response(intent_tag):
     if intent_tag in responses:
         return random.choice(responses[intent_tag])
     return "Non ho capito bene, puoi riformulare?"
+
+def chatbot_logic(user_message, session_id="default"):
+    if not user_message:
+        return "Per favore scrivi qualcosa.", None, 0.0
+
+    # Recupera cronologia
+    history = conversations.get(session_id, [])
+    history.append({"role": "user", "text": user_message})
+
+    # Costruisci contesto
+    prev_texts = [
+        m["text"]
+        for m in history[-N_HISTORY:]
+        if m["role"] == "user"
+    ]
+    contextual_message = " ".join(prev_texts)
+
+    # Classifica intent
+    intent, confidence = classify_intent_embedding(contextual_message)
+
+    if intent is None:
+        bot_reply = "Non ho capito bene, puoi riformulare?"
+    else:
+        bot_reply = generate_response(intent)
+
+    history.append({"role": "bot", "text": bot_reply})
+    conversations[session_id] = history[-MAX_HISTORY:]
+
+    return bot_reply, intent, confidence
+
 
 # =========================
 # Static files (immagini)
@@ -113,9 +181,9 @@ def debug_files():
 # =========================
 # Home page
 # =========================
-@app.route("/")
-def index():
-    return send_from_directory(".", "index.html")
+#@app.route("/")
+#def index():
+#    return send_from_directory("..", "index.html")
 
 
 # =========================
@@ -125,7 +193,7 @@ def index():
 def test():
     return jsonify({
         "status": "ok",
-        "message": "GustAVO (embedding version) è attivo!"
+        "message": "attivo!"
     })
 
 
@@ -138,45 +206,37 @@ def chat():
     user_message = data.get("message", "").strip()
     session_id = data.get("session_id", "default")
 
-    if not user_message:
-        return jsonify({"answer": "Per favore scrivi qualcosa."})
-
-    # Recupera cronologia
-    history = conversations.get(session_id, [])
-    history.append({"role": "user", "text": user_message})
-
-    # Costruisci contesto
-    prev_texts = [
-        m["text"]
-        for m in history[-N_HISTORY:]
-        if m["role"] == "user"
-    ]
-    contextual_message = " ".join(prev_texts)
-
-    # Classifica intent con embedding
-    intent, confidence = classify_intent_embedding(
-        contextual_message
+    bot_reply, intent, confidence = chatbot_logic(
+        user_message, session_id
     )
-
-    if intent is None:
-        bot_reply = "Non ho capito bene, puoi riformulare?"
-    else:
-        bot_reply = generate_response(intent)
-
-    history.append({"role": "bot", "text": bot_reply})
-    conversations[session_id] = history[-MAX_HISTORY:]
 
     return jsonify({
         "answer": bot_reply,
         "intent": intent,
         "confidence": round(float(confidence), 2),
-        "history": conversations[session_id]
+        "history": conversations.get(session_id, [])
     })
+
 
 
 # =========================
 # Avvio app
 # =========================
+
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host="0.0.0.0", port=port)
+    import sys
+
+    if "--console" in sys.argv:
+        print("WARNING: Chatbot in modalità console")
+        print("WARNING: In questa modalità, il chatbot si interfaccia DIRETTAMENTE con la CONSOLE e quindi NON ARRIVERA AL FRONTEND")
+        while True:
+            user_input = input("Tu: ")
+            if user_input.lower() in ("exit", "quit"):
+                break
+
+            reply, intent, confidence = chatbot_logic(user_input)
+            print(f"Bot: {reply}")
+            print(f"    ↳ intent={intent}, conf={confidence:.2f}\n")
+    else:
+        port = int(os.environ.get("PORT", 5000))
+        app.run(host="0.0.0.0", port=port)
