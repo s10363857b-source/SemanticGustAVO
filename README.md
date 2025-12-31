@@ -1,27 +1,20 @@
 SemanticGustAVO
 Riassunto modifiche
 
-MODIFICHE ai BLOCCHI:
-=========================
+MODIFICHE ai CAMPI:
+
 Prepara risposte e embedding
-=========================
 
-=========================
 Classificazione intent con embedding
-=========================
 
-=========================
 Chat endpoint
-=========================
 
-=========================
 Avvio app
-=========================
 
 AGGIUNTA
-=========================
+
 Logica chatbot
-=========================
+
 
 Ho apportato delle migliorie al riguardo della strutturazione della logica embedding, con la tecnologia FAISS (Facebook AI Similarity Search) una libreria open source per la ricerca di similarità e il clustering di vettori
 è stato aggiunta la possibilità di caricare un file intent.faiss con i dati emebdding elaborati senza doverli ricalcolare ad ogni avvio, se il file non esiste o non trovato il programma ne creerà uno nuovo e allo stesso tempo
