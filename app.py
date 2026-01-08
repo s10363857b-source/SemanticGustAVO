@@ -39,7 +39,7 @@ METADATA_PATH = "intents_meta.json"
 if os.path.exists(FAISS_INDEX_PATH) and os.path.exists(METADATA_PATH):
     print("Caricamento indice FAISS esistente")
 
-    index = faiss.read_index(FAISS_INDEX_PATH)
+    faiss_index = faiss.read_index(FAISS_INDEX_PATH)
 
     with open(METADATA_PATH, "r", encoding="utf-8") as f:
         metadata = json.load(f)
@@ -73,16 +73,16 @@ else:
     dim = embeddings.shape[1]
 
     # Indice FAISS (cosine similarity)
-    index = faiss.IndexFlatIP(dim)
+    faiss_index = faiss.IndexFlatIP(dim)
 
     # Normalizzazione per cosine similarity
     faiss.normalize_L2(embeddings)
 
     # Aggiunta vettori
-    index.add(embeddings)
+    faiss_index.add(embeddings)
 
     # Salvataggio su disco
-    faiss.write_index(index, FAISS_INDEX_PATH)
+    faiss.write_index(faiss_index, FAISS_INDEX_PATH)
 
     with open(METADATA_PATH, "w", encoding="utf-8") as f:
         json.dump(metadata, f, ensure_ascii=False, indent=2)
@@ -106,7 +106,7 @@ def classify_intent_embedding(user_message, threshold=0.5):
 
     faiss.normalize_L2(user_embedding)
 
-    scores, indices = index.search(user_embedding, k=1)
+    scores, indices = faiss_index.search(user_embedding, k=1)
 
     best_score = scores[0][0]
     best_idx = indices[0][0]
@@ -185,9 +185,9 @@ def debug_files():
 # =========================
 # Home page
 # =========================
-#@app.route("/")
-#def index():
-#    return send_from_directory("..", "index.html")
+@app.route("/")
+def index():
+    return send_from_directory(".", "index.html")
 
 
 # =========================
