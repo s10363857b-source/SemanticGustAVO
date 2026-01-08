@@ -7,6 +7,7 @@ import json
 import random
 import os
 import faiss
+import sys
 
 from sentence_transformers import SentenceTransformer
 
@@ -35,7 +36,7 @@ embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 # =========================
 FAISS_INDEX_PATH = "intents.faiss"
 METADATA_PATH = "intents_meta.json"
-# Se il file contenente emebedding esiste già, lo si carica evitando sprechi di risorse, sennò lo si crea sul momento creando il file
+# Se il file contenente emebedding esiste già, lo si carica evitando sprechi di risorse, sennò lo si crea sul momento generando un file index.faiss e un intents_meta.json
 if os.path.exists(FAISS_INDEX_PATH) and os.path.exists(METADATA_PATH):
     print("Caricamento indice FAISS esistente")
 
@@ -228,7 +229,7 @@ def chat():
 # =========================
 
 if __name__ == "__main__":
-    import sys
+
 
     if "--console" in sys.argv:
         print("WARNING: Chatbot in modalità console")
@@ -243,4 +244,5 @@ if __name__ == "__main__":
             print(f"    ↳ intent={intent}, conf={confidence:.2f}\n")
     else:
         port = int(os.environ.get("PORT", 5000))
+
         app.run(host="0.0.0.0", port=port)
