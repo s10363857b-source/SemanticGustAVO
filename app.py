@@ -34,8 +34,8 @@ embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 # =========================
 # Prepara risposte e embedding
 # =========================
-FAISS_INDEX_PATH = "intents.faiss"
-METADATA_PATH = "intents_meta.json"
+FAISS_INDEX_PATH = os.path.dirname(os.path.abspath(__file__)) + "/intents.faiss"
+METADATA_PATH = os.path.dirname(os.path.abspath(__file__)) + "/intents_meta.json"
 # Se il file contenente emebedding esiste già, lo si carica evitando sprechi di risorse, sennò lo si crea sul momento generando un file index.faiss e un intents_meta.json
 if os.path.exists(FAISS_INDEX_PATH) and os.path.exists(METADATA_PATH):
     print("Caricamento indice FAISS esistente")
@@ -246,3 +246,4 @@ if __name__ == "__main__":
         port = int(os.environ.get("PORT", 5000))
 
         app.run(host="0.0.0.0", port=port)
+
