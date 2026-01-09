@@ -100,7 +100,7 @@ MAX_HISTORY = 10       # massimo messaggi salvati
 # =========================
 # Classificazione intent con embedding
 # =========================
-def classify_intent_embedding(user_message, threshold=0.5):
+def classify_intent_embedding(user_message, threshold=0.7):
     user_embedding = embedding_model.encode(
         [user_message]
     ).astype("float32")
@@ -246,5 +246,6 @@ if __name__ == "__main__":
         port = int(os.environ.get("PORT", 5000))
 
         app.run(host="0.0.0.0", port=port)
+
 
 
