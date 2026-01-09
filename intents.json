@@ -1,0 +1,1774 @@
+{
+  "intents": [
+    {
+      "tag": "saluto",
+      "patterns": [
+        "Ciao Gustavo",
+        "Ciao",
+        "Chi sei?",
+        "Buongiorno.",
+        "Buongiorno!",
+        "Salve",
+        "Salve!",
+        "Ehi",
+        "Ciao bot",
+        "Come va?",
+        "Come Stai?",
+        "Hello",
+        "Hey",
+        "Buonasera",
+        "Ciao Avogadro",
+        "Buondì",
+        "ciap",
+        "cia",
+        "ola"
+      ],
+      "responses": [
+        "Ciao! Questa è l'Avogadro, la nostra scuola, cosa vuoi sapere?",
+        "Ciao! Sono Gustavo,  come posso aiutarti oggi per conoscere l'Avogadro?",
+        "Benvenuto! Ti serve un consiglio per orientarti in Avogadro?",
+        "Ciao, sono Gustavo,  tutto bene? Come posso aiutarti per conoscere l'Avogadro?",
+        "Ciao, come posso aiutarti in Avogadro ?",
+        "Ciao, hai bisogno di un consiglio sull'Avogadro ?",
+        "Ciao, sono l'intelligenza artificiale dell'Avogadro, di cosa hai bisogno?",
+        "Ciao, chiedimi qualsiasi cosa riguardante l'Avogadro e se posso ti aiuto"
+      ],
+      "author": "A.Carlone/A.Criniti"
+    },
+    {
+      "tag": "aiuto",
+      "patterns": [
+        "Ciao, cosa posso fare in questa chat?",
+        "Cosa posso fare in questa chat?!",
+        "A cosa serve questa chat?",
+        "Perchè questa chat?",
+        "Cosa devo fare?",
+        "Mi aiuti?",
+        "Aiuto",
+        "Help",
+        "Di quali argomenti ti occupi?",
+        "Chi sei?",
+        "Cosa posso fare?",
+        "A cosa servi?",
+        "Cosa posso fare per te?",
+        "Cosa posso fare?",
+        "Cosa devo fare?"
+      ],
+      "responses": [
+        "Ciao! Sono Gustavo, un bot automatico e posso aiutarti a conoscere meglio la nostra scuola",
+        "Benvenuto! Ti serve un consiglio?",
+        "Ciao, tutto bene? Come posso aiutarti per orientarti?",
+        "Ciao, sono GustAvo, come posso aiutarti per conoscere meglio la nostra scuola?",
+        "Ciao, cosa vuoi sapere della nostra scuola?"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "informatica_perchè",
+      "patterns": [
+        "Perchè scegliere informatica?",
+        "Perché fare la specializzione  informatica?",
+        "Perchè informatica?",
+        "Perché è importante informatica?",
+        "Motivi per scegliere informatica",
+        "Perché dovrei scegliere informatica?",
+        "cosa posso fare dopo informatica?"
+      ],
+      "responses": [
+        "L'informatica è molto importante nel mondo del lavoro",
+        "Scegliere informatica offre parecchie possibilità di lavoro",
+        "Gli informatici sono molto richiesti in varie aziende"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "studiare_informatica",
+      "patterns": [
+        "Cosa si studia ad informatica?",
+        "Cosa si insegna ad informatica?",
+        "Percorso di studi di informatica?",
+        "Quali materie si studiano ad informatica?",
+        "Quale il programma di informatica ",
+        "Quali materie informatica",
+        "cosa posso fare dopo informatica?"
+      ],
+      "responses": [
+        "Ti consiglio di navigare sul sito della scuola e scegliere la specializzazione informatica per avere tutte le informazioni"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "dipartimenti",
+      "patterns": [
+        "Quali dipartimenti ci sono?",
+        "Quali dipartimenti avete?",
+        "Quali dipartimenti?",
+        "Quanti dipartimenti?",
+        "Dipartimenti"
+      ],
+      "responses": [
+        "In Avogadro ci sono 4 dipartimenti: Informatica, Meccanica, Elettrotecnica, Liceo",
+        "In Avogadro ci sono i dipartimenti di  Informatica, Meccanica, Elettrotecnica, Liceo",
+        "Ci  sono i  seguenti dipartimenti:  Informatica, Meccanica, Elettrotecnica, Liceo"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "indirizzi",
+      "patterns": [
+        "Quali indirizzi ci sono?",
+        "Quali indirizzi avete?",
+        "Quali indirizzi?",
+        "Quanti indirizzi?",
+        "indirizzi",
+        "Quali specializzazioni ci sono?",
+        "Quali specializzazioni avete?",
+        "Quali specializzazioni?",
+        "Quante specializzazioni?",
+        "specializzazioni",
+        "Cosa si insegna a scuola?",
+        "Quali insegnamenti?",
+        "Cosa si impara a scuola?",
+        "imparare?",
+        "cosa si studia?"
+      ],
+      "responses": [
+        "In Avogadro ci sono 4 indirizzi: Informatica e telecomunicazioni, Meccanica, Meccatronica ed Energia, Elettrotecnica ed Elettronica, Liceo scientifico scienze applicate, Cambridge international school",
+        "In Avogadro gli indirizzi di studio sono: Informatica e telecomunicazioni, Meccanica, Meccatronica ed Energia, Elettrotecnica ed Elettronica, Liceo scientifico scienze applicate, Cambridge international school",
+        "Ci  sono i  seguenti indirizzi di studio:  Informatica e telecomunicazioni, Meccanica, Meccatronica ed Energia, Elettrotecnica ed Elettronica, Liceo scientifico scienze applicate, Cambridge international school"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "preside",
+      "patterns": [
+        "Come si chiama il dirigente scolastico?",
+        "Come si chiama il preside?",
+        "Come si chiama la preside?",
+        "preside?",
+        "dirigente?",
+        "Chi è il dirigente scolastico?",
+        "Chi è il preside?",
+        "quale nome la preside",
+        "nome preside",
+        "qual'è il nome della preside?",
+        "nome della preside",
+        "chi dirige la scuola?",
+        "chi è a capo della scuola?"
+      ],
+      "responses": [
+        "Il dirigente si chiama Anna Luisa Chiappetta",
+        "La Preside si chiama Anna Luisa Chiappetta",
+        "La Preside è l'ing. Anna Luisa Chiappetta",
+        "La dirigente scolastica è l'ing. Anna Luisa Chiappetta"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "vicepresidenza",
+      "patterns": [
+        "Come si chiama il vicepreside?",
+        "Come si chiama la vicepreside?",
+        "Motivi per scegliere informatica",
+        "vicario?",
+        "vicepreside?",
+        "vice preside?",
+        "Chi è il dirigente vicario?",
+        "Chi è il vicepreside?",
+        "Chi è la vicepreside?",
+        "chi gestisce la parte organizzativa?"
+      ],
+      "responses": [
+        "La vicepreside si chiama Laura Panaro",
+        "La vicepreside si chiama Laura Panaro",
+        "La vicepreside è la prof.ssa Laura Panaro"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "dsga",
+      "patterns": [
+        "Come si chiama il dsga?",
+        "Come si chiama il direttore amministrativo?",
+        "Chi è a capo dell'amministrazione?",
+        "Amministrazione?",
+        "direttore amministrazione?"
+      ],
+      "responses": [
+        "il D.S.G.A. è il dott. Paolo Astuti",
+        "il Direttore amministrativo è il dott. Paolo Astuti",
+        "La direzione amministrativa è coordinata dal dott. Paolo Astuti"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "direzioneTecnica",
+      "patterns": [
+        "Come si chiama il responsabiule dell'ufficio tecnico?",
+        "Chi dirige l'ufficio tecnico?",
+        "Come funziona l'ufficio tecnico?",
+        "Chi gestisce la sicurezza?",
+        "Quale referente tecnico?"
+      ],
+      "responses": [
+        "L'ufficio tecnico è coordinato dal prof. Antonio Mandarano",
+        "A capo dell'ufficio tecnico è il prof. Antonio Mandarano",
+        "Il prof. Antonio Mandarano coordina l'ufficio tecnico e si occupa della sicurezza"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "QuantiStudenti",
+      "patterns": [
+        "Quanti studenti?",
+        "Numero di studenti?",
+        "Quanti alunni?",
+        "Numero di alunni?",
+        "Quanti studenti ci sono?",
+        "Quanti iscritti",
+        "numero di iscritti"
+      ],
+      "responses": [
+        "Nella nostra scuola ci sono circa 1300 studenti",
+        "Sono iscritti circa 1300 studenti"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "QuantiDocenti",
+      "patterns": [
+        "Quanti docenti?",
+        "Numero di docenti?",
+        "Quanti docenti ci sono?",
+        "Quanti insegnanti",
+        "numero di insegnanti",
+        "Quanti professori",
+        "numero di professori"
+      ],
+      "responses": [
+        "Nella nostra scuola ci sono circa 120 docenti",
+        "Nella nostra scuola ci sono circa 120 insegnanti",
+        "Nella nostra scuola ci sono circa 120 professori",
+        "Insegnano circa 120 docenti",
+        "Insegnano circa 120 docenti"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "QuanteSezioni",
+      "patterns": [
+        "Quante sezioni ci sono?",
+        "Numero di sezioni?",
+        "Sezioni?"
+      ],
+      "responses": [
+        "Puoi essere più preciso?",
+        "Nella nostra scuola ci sono quattro sezioni di informatica, tre di liceo, una di meccanico ed una di elettrotecnica. Esiste anche un progetto Cambridge in lingua inglese e un corso serale"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "Cambridge",
+      "patterns": [
+        "Cosa si fa al Cambridge?",
+        "Cambridge?",
+        "Corso Cambridge?",
+        "Progetto Cambridge?",
+        "Corsi in lingua inglese?",
+        "contatti",
+        "cambridge",
+        "inglese",
+        "lingua straniera"
+      ],
+      "responses": [
+        "Esiste un progetto  Cambridge del liceo e tecnico Informtico che svolge lezioni in lingua inglese",
+        "Nella nostra scuola è attivo un progetto  Cambridge in lingua inglese, per ora per Liceo e Tecnico Informatico",
+        "il programma Cambridge arricchisce  il curriculum italiano con un approccio metodologico che si distingue dall’offerta formativa nazionale. Nella nostra scuola, negli indirizzi LICEO SCIENTIFICO opz. SCIENZE APPLICATE CAMBRIDGE e TECNICO INFORMATICA E TELECOMUNICAZIONI CAMBRIDGE, materie come la Biologia, la Chimica, la Fisica, l’Informatica verranno insegnate in Inglese seguendo i programmi corrispondenti Cambridge (cosiddetti syllabus).",
+        "per sapere di più sul progetto Cambridge vai sul sito della scuola"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "Serale",
+      "patterns": [
+        "Cosa si fa al Serale?",
+        "Sezione serale?",
+        "C'è un corso serale?",
+        "Cos'è il serale?",
+        "Cosa si fa al serale?",
+        "serale?",
+        "Studenti lavoratori"
+      ],
+      "responses": [
+        "Esiste un percorso di studi serale per studenti lavoratori  che comprende il biennio e le specializzazioni di Informatica e telecomunicazioni, Elettrotecnica ed Elettronica, Meccanica e Meccatronica",
+        "Nella nostra scuola è attivo un corso serale per studenti lavoratori",
+        "per sapere di più sul corso serale  vai sul sito della scuola"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "PCTO",
+      "patterns": [
+        "Si fanno progetti?",
+        "Progetti?",
+        "Quanti progetti",
+        "PCTO",
+        "Formazione lavoro",
+        "FLS",
+        "Alternanza scuola lavoro",
+        "Mondo del lavoro",
+        "Orientamento",
+        "quali progetti stranieri"
+      ],
+      "responses": [
+        "Sono tanti i progetti che si realizzano nella nostra scuola",
+        "Moltissimi progetti vengono realizzati per avvicinare gli studenti al mondo del lavoro",
+        "Molti i progetti in collaborazione con Aziende, associazioni e mondo dell'università per orientare al mondo del lavoro e alle scelte future"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "nome",
+      "patterns": [
+        "Perchè si chiama Avogadro?",
+        "da cosa deriva il nome della scuala?",
+        "nome della scuola?",
+        "perchè questo nome?",
+        "nome?",
+        "perchè Avogadro?",
+        "perchè nome Avogadro?",
+        "etimologia"
+      ],
+      "responses": [
+        "La scuola è dedicata ad Amedeo Avogadro, famoso fisico e chimico",
+        "La scuola prende il nome da Amedeo Avogadro (1776-1856) è stato un fisico e chimico italiano, noto per la sua Legge di Avogadro (1811)"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "storia",
+      "patterns": [
+        "Quando è stata fondata la scuola?",
+        "Quando è stata fondato l'Avogadro?",
+        "Quando è stata fondata?",
+        "A quando risale la storia della scuola??",
+        "storia?",
+        "La storia?",
+        "risale?",
+        "Quanti anni ha?",
+        "Raccontami della storia della scuola",
+        "Origini dell'Avogadro",
+        "Da quanto tempo esiste?"
+      ],
+      "responses": [
+        "La scuola è stata fondata alla fine dell'ottocento",
+        "L'ITIS Avogadro è nato alla fine del XIX secolo e ha contribuito alla formazione di tecnici e ingegneri per oltre 120 anni.",
+        "La scuola ha una lunga tradizione educativa, con radici che risalgono alla Torino industriale dell’Ottocento."
+      ],
+      "author": "A.Carlone/D.Fabrizio"
+    },
+    {
+      "tag": "posizione",
+      "patterns": [
+        "Come raggiungere la scuola?",
+        "Come si raggiunge l'Avogadro?",
+        "Quali mezzi devo prendere per venire a scuola?",
+        "Quali fermate?",
+        "Indirizzo?",
+        "Dove si trova?"
+      ],
+      "responses": [
+        "La scuola si trova in corso S.Maurizio 8, in pieno centro di Torino",
+        "La scuola si trova in corso S.Maurizio 8,e facilmente raggiungibile con treno, tram e bus",
+        "La scuola si trova in corso S.Maurizio 8,e facilmente raggiungibile con treno, tram e bus, c'è anche un ampio cortile con posti per biciclette e monopattini"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mobilità",
+      "patterns": [
+        "Come è gestita la mobilità?",
+        "mobilità sostenibile?",
+        "Come venire a scuola in modo sostenibile?",
+        "Posso venire in bicicletta?",
+        "Posso venire in macchina?",
+        "C'è un parcheggio di auto?",
+        "C'è un parcheggio di biciclette?",
+        "se vengo in bici o monopattini?"
+      ],
+      "responses": [
+        "La scuola si trova nel centro della città e c'è un parcheggio bici all'interno",
+        "Per venire a scuola si consiglia una mobilità sostenibile (principalmente mezzi pubblici e bicicletta)",
+        "La scuola promuove la mobilità sostenibile.C'è una ampio parcheggio di biciclette sia all'interno che all'esterno"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "grazie",
+      "patterns": [
+        "Grazie",
+        "Grazie!",
+        "Grazie mille",
+        "Grazie per l'aiuto",
+        "Grazie, a dopo",
+        "si grazie"
+      ],
+      "responses": [
+        "Grazie a te! Quando vuoi altre informazioni chiamami!",
+        "Di nulla! Se vuoi altre informazioni chiamami ancora!"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "fine",
+      "patterns": [
+        "Grazie, basta così",
+        "Grazie, finito!",
+        "Ok, a presto",
+        "Basta così",
+        "Ciao, ho finito",
+        "Arrivederci",
+        "Buona giornata",
+        "Grazie, a dopo"
+      ],
+      "responses": [
+        "Grazie a te! Spero che l'Avogadro possa piacerti",
+        "Ciao! Torna presto per altri consigli.",
+        "Di nulla! Se vuoi continua pure a chiedere!",
+        "Arrivederci! Ricorda di passare a trovarci!"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola",
+      "patterns": [
+        "Hai una mappa della scuola?",
+        "Mappa scuola",
+        "Come trovo le aule?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa interattiva della scuola qui: <a href=\"https://openlevelup.net/#18/45.07061/7.69247 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata della scuola: <a href=\"https://openlevelup.net/#18/45.07061/7.69247 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_aulamagna",
+      "patterns": [
+        "Hai una mappa dell'aula magna?",
+        "Mappa aula magna"
+      ],
+      "responses": [
+        "Puoi vedere l'aula magna qui: <a href=\"https://openlevelup.net/?l=1#21/45.07059/7.69218 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata dell'aula magna: <a href=\"https://openlevelup.net/?l=1#21/45.07059/7.69218 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_bar",
+      "patterns": [
+        "Hai una mappa del bar?",
+        "Mappa bar",
+        "bar",
+        "mensa",
+        "Come trovo la mappa della mensa o il bar?",
+        "dove trovo la mappa della mensa scolastica?",
+        "come trovo la mappa della mensa?"
+      ],
+      "responses": [
+        "Puoi vedere il bar qui: <a href=\"https://openlevelup.net/?l=1#21/45.07075/7.69230 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del bar: <a href=\"https://openlevelup.net/?l=1#21/45.07075/7.69230 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_sala_insegnanti",
+      "patterns": [
+        "Hai una mappa della sala insegnanti?",
+        "Hai una mappa della sala docenti?",
+        "Mappa sala insegnanti",
+        "Mappa sala docenti",
+        "hai la mappa della aula docenti?",
+        "hai una mappa dell'aula docenti?"
+      ],
+      "responses": [
+        "Puoi vedere la sala docenti qui: <a href=\"https://openlevelup.net/?l=0#21/45.07101/7.69250 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata della sala docenti: <a href=\"https://openlevelup.net/?l=0#21/45.07101/7.69250 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_biblioteca",
+      "patterns": [
+        "Hai una mappa della biblioteca?",
+        "Dove si trova la biblioteca",
+        "Hai una mappa della biblioteca?",
+        "Mappa biblioteca",
+        "Mappa biblio teca",
+        "Mappa libreria ",
+        "mappa biblioteca",
+        "hai una mappa della bibloteca?",
+        "mappa dove ci sono libri?"
+      ],
+      "responses": [
+        "Puoi vedere la bibioteca qui: <a href=\"https://openlevelup.net/?l=0#21/45.07078/7.69243 \" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata della biblioteca: <a href=\"https://openlevelup.net/?l=0#21/45.07078/7.69243 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_terra",
+      "patterns": [
+        "Piano terra",
+        "Hai una mappa del piano terra?",
+        "Hai la mappa del piano terra?",
+        "Come trovo il piano terra?",
+        "cosa c'è al piano terra?",
+        "aule del piano terra?",
+        "dove trovo le aule del  piano terra?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del piano terra qui: <a href=\"https://openlevelup.net/?l=0#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del piano terra: <a href=\"https://openlevelup.net/?l=0#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_primo",
+      "patterns": [
+        "Piano primo",
+        "Primo piano",
+        "1. piano",
+        "Hai una mappa del 1.o piano?",
+        "Hai una mappa del primo piano?",
+        "Hai la mappa del primo piano?",
+        "Come trovo il primo piano?",
+        "cosa c'è al primo piano ?",
+        "aule del primo piano?",
+        "dove trovo le aule del  primo piano?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del primo piano  qui: <a href=\"https://openlevelup.net/?l=1#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del primo piano : <a href=\"https://openlevelup.net/?l=1#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_secondo",
+      "patterns": [
+        "Piano secondo",
+        "secondo piano",
+        "2. piano",
+        "Hai una mappa del 2.o piano?",
+        "Hai una mappa del secondo piano?",
+        "Hai la mappa del secondo piano?",
+        "Come trovo il secondo piano?",
+        "cosa c'è al secondo piano ?",
+        "aule del secondo piano?",
+        "dove trovo le aule del secondo piano?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del secondo piano  qui: <a href=\"https://openlevelup.net/?l=2#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del secondo piano : <a href=\"https://openlevelup.net/?l=2#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_terzo",
+      "patterns": [
+        "Piano terzo",
+        "terzo piano",
+        "3. piano",
+        "Hai una mappa del 3.o piano?",
+        "Hai una mappa del terzo piano?",
+        "Hai la mappa del terzo piano?",
+        "Come trovo il terzo piano?",
+        "cosa c'è al terzo piano ?",
+        "aule del terzo piano ?",
+        "dove trovo le aule del  terzo piano?",
+        "ciap"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del terzo piano  qui: <a href=\"https://openlevelup.net/?l=3#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del terzo piano : <a href=\"https://openlevelup.net/?l=3#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_scuola_piano_quarto",
+      "patterns": [
+        "Piano quarto",
+        "quarto piano",
+        "4. piano",
+        "Hai una mappa del 4.o piano?",
+        "Hai una mappa del quarto piano?",
+        "Hai la mappa del quarto piano?",
+        "Come trovo il quarto piano?",
+        "cosa c'è al quarto piano ?",
+        "aule del quarto piano ?",
+        "dove trovo le aule del quarto piano?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa del quarto piano  qui: <a href=\"https://openlevelup.net/?l=4#19/45.07083/7.69240\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata del quarto piano : <a href=\"https://openlevelup.net/?l=4#19/45.07083/7.69240 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "mappa_palestra",
+      "patterns": [
+        "mappa Palestra",
+        "Mappa della palestra",
+        "Hai una mappa della palestra?"
+      ],
+      "responses": [
+        "Puoi consultare la mappa della palestra qui: <a href=https://openlevelup.net/?l=0#21/45.07062/7.69238 \"\" target=\"_blank\">Apri la mappa</a>",
+        "Ecco la mappa dettagliata della palestra : <a href=\"https://openlevelup.net/?l=0#21/45.07062/7.69238 \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "avogreen",
+      "patterns": [
+        "progetti ambientali?",
+        "fate qualcosa per l'ambiente?",
+        "ambiente?",
+        "ecologia?",
+        "salvaguardia ambiente?",
+        "mobilità?",
+        "cosa fate per la mobilità?",
+        "cosa fate per la sostenibilità?",
+        "sostenibilità?",
+        "come migliorare l'ambiente?",
+        "salvaguardia ambiente?"
+      ],
+      "responses": [
+        "In Avogadro c'è il progetto AVOGREEN, per una scuola sostenibile",
+        "Grazie al  progetto AvoGreen la scuola fa parte della rete delle scuole eco attive della Regione Piemonte",
+        "Il progetto AvoGreen si occupa di rendere la scuola più sostenibile"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "sitoWeb",
+      "patterns": [
+        "Qual'è il sito Web della scuola?",
+        "sito web?",
+        "quale il sito della scuola?",
+        "web?"
+      ],
+      "responses": [
+        "Puoi consultare il sito web della scuola: <a href=\"https://www.itisavogadro.edu.it \" target=\"_blank\">Apri il sito Web</a>",
+        "Ecco il sito Web della scuola: <a href=\"https://www.itisavogadro.edu.it \" target=\"_blank\">Clicca qui</a>"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "orari",
+      "patterns": [
+        "Quali gli orari?",
+        "Calendario scolastico e orari?",
+        "Orario scolastico?",
+        "Orari",
+        "Ore?",
+        "A che ora si va a scuola?",
+        "A che ora si entra?"
+      ],
+      "responses": [
+        "Le lezioni del mattino iniziano alle 8 e normalmente finiscono alle 13, ma vi sono alcune classi che rientrano il pomeriggio",
+        "Normalmente dalle 8 alle 13 con eventuali rientri al pomeriggio dalle 14 alle 17",
+        "Normalmente dalle 8 alle 13 ma puoi consultare gli orari sul sito Web della scuola"
+      ],
+      "author": "A.Carlone"
+    },
+    {
+      "tag": "telefono",
+      "patterns": [
+        "numero di telefono della scuola",
+        "telefono",
+        "quale il numrp di telefono"
+      ],
+      "responses": [
+        "Telefono: +390118153611"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "sito web",
+      "patterns": [
+        "quale il sito web?"
+      ],
+      "responses": [
+        "https://www.itisavogadro.edu.it/"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "mail",
+      "patterns": [
+        "quale l'indirizzo mail?",
+        "indirizzo mail",
+        "mail",
+        "quale la mail?",
+        "la mail della scuola?"
+      ],
+      "responses": [
+        "tois05100c@istruzione.it"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "pec",
+      "patterns": [
+        "quale la PEC?",
+        "qual'è la pec della scuola?",
+        "la pec della scuola?",
+        "la pec dell'avogadro?"
+      ],
+      "responses": [
+        "tois05100c@pec.istruzione.it"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "codiceFiscale",
+      "patterns": [
+        "quale il codice fiscale?",
+        "codice fiscale",
+        "sai qual'è il codice fiscale?"
+      ],
+      "responses": [
+        "Codice fiscale: 97550230011"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "codiceMeccanografico",
+      "patterns": [
+        "quale il codice meccanografico",
+        "quale codice meccanografico ha la scuola?",
+        "qual'è il suo codice meccanografico?"
+      ],
+      "responses": [
+        "il codice meccanografico è: tois05100c"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "insegnanti",
+      "patterns": [
+        "quanti sono gli insegnanti?",
+        "come sono gli insegnanti?"
+      ],
+      "responses": [
+        "Gli insegnanti della scuola sono circa 130 e tra di loro ci sono tanti professionisti  che insegnano con passione e impegno"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "MaschiFemmine",
+      "patterns": [
+        "Quanto maschi e quante femmine?"
+      ],
+      "responses": [
+        "Al liceo vi sono più o meno metà maschi e metà femmine, all'ITIS sono in maggioranza i maschi ma speriamo che in futuro questa proporzione si modifichi a favore delle ragazze"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "sbocchiProfessionali",
+      "patterns": [
+        "quali gli sbocchi professionali?",
+        "quali sono gli sbocchi?"
+      ],
+      "responses": [
+        "Diplomarsi all'Avogadro garantisce molte  opportunità , sia per chi vorrà cercare un lavoro, che per chi vorrà proseguire con gli studi universitari o scuole post diploma"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "contatti",
+      "patterns": [
+        "come posso contattare la scuola",
+        "quali i contatti della scuola"
+      ],
+      "responses": [
+        "per contattare la scuola puoi chiamare il numero di telefono 0118153611 o inviare una mail a tois05100c@istruzione.it"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "generico",
+      "patterns": [
+        "come si sta in avogadro?",
+        "come si sta",
+        "com'è la scuola?",
+        "com'è?"
+      ],
+      "responses": [
+        "La scuola è una delle più antiche copme storia ma anche tra le più moderne come attività didattiche e laboratoriali. E' riconosciuta come una della migliori scuole di Torino e provincia"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "bar",
+      "patterns": [
+        "dove si trova il bar?",
+        "come raggiungo il bar?",
+        "dov'è il bar?",
+        "come faccio a raggiungere la mensa?",
+        "dove posso trovare da mangiare?",
+        "c'è un bar?",
+        "c'è una mensa?"
+      ],
+      "responses": [
+        "Al primo piano, prendi a destra, 20 metri e trovi il bar e la mensa della scuola"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "aulamagna",
+      "patterns": [
+        "dove si trova l'aula magna?",
+        "come raggiungo l'aula magna?",
+        "dov'è l'aula magna",
+        "come faccio a raggiungere l'aula magna?",
+        "dove posso trovare la sala conferenze?",
+        "c'è una aula magna",
+        "c'è aula magna?",
+        "Aula magna",
+        " Sala Rattazzi"
+      ],
+      "responses": [
+        "Al primo piano, prendi a destra, 20 metri, subito dopo il bar trovi la sala Rattazzi (aula Magna)",
+        "Al primo piano, a destra subito dopo il bar trovi l'aula magna, sala Rattazzi"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "palestra",
+      "patterns": [
+        "dove si trova la palestra?",
+        "come raggiungo la palestra?",
+        "dov'è la palestra?",
+        "come faccio a raggiungere la palestra?",
+        "dove posso trovare la palestra?",
+        "c'è una palestra?",
+        "c'è palestra?",
+        "Palestra",
+        "dove si fa ginnastica?",
+        "dove si fa sport?",
+        "dove si fa educazione fisica?",
+        "dove si può fare sport?",
+        "Quante palestre ha l'Avogadro?"
+      ],
+      "responses": [
+        "Al piano terra, dal centralino vai in fondo al corridoio, poi a destra ci sono le due palestre",
+        "Al piano terra, vai in fondo al corridoio, poi a destra ci sono le due palestre della scuola",
+        "L'avogadro presenta una palestra grande e una palestra piccola, entrambe situate al fondo del piano terra",
+        "L'Avogadro dispone di due palestre, una grande e una piccola. Entrambe hanno due canestri e la possibilità di montare una rete da pallavolo. Sono disponibili molti palloni per vari sport, un tavolo da ping pong e un calcio balilla."
+      ],
+      "author": "web-admin/Donatiello Luca/Rullo Corrado Octavio"
+    },
+    {
+      "tag": "salaInsegnanti",
+      "patterns": [
+        "dove si trova la sala insegnanti",
+        "come raggiungo la sala insegnanti?",
+        "dove si trova la sala docenti",
+        "come raggiungo la sala docenti?",
+        "dove si trova la aula insegnanti",
+        "come raggiungo la aula insegnanti?",
+        "dov'è la sala insegnanti?",
+        "come faccio a raggiungere la sala insegnanti?",
+        "dove posso trovare la sala insegnanti?",
+        "c'è una sala insegnanti?",
+        "c'è sala insegnanti?",
+        "Sala insegnanti",
+        "aula docenti",
+        "sala docenti",
+        "dove posso trovare gli insegnanti?",
+        "dove stanno i docenti?",
+        "dove stanno gli insegnanti?"
+      ],
+      "responses": [
+        "Al piano terra, dopo il centralino vai nel corridoio, dove trovi le colonne storiche gira subito a destra e trovi l'aula docenti",
+        "Dall'ingresso, dopo il centralino trovi uno spiazzo con le colonne storiche. Gira subito a destra e trovi l'aula docenti"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "biblioteca",
+      "patterns": [
+        "dov'è la biblioteca?"
+      ],
+      "responses": [
+        "Al piano terra, dal centralino vai avanti 20 metri e poi a destra"
+      ],
+      "pending": false
+    },
+    {
+      "tag": "mappa_vicepresidenza",
+      "patterns": [
+        "dove si trova la vicepresidenza?",
+        "dov'è la vicepreside?",
+        "dov'è la vicepresidenza?",
+        "dov'è l'ufficio della vicepreside?",
+        "dove si trova la vicepreside?"
+      ],
+      "responses": [
+        "al piano terra, all'ingresso corridoio a sinistra e si trovano gli uffici della vicepresidenza"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "mappa_didattica",
+      "patterns": [
+        "dove si trova la segreteria didattica?"
+      ],
+      "responses": [
+        "al piano terra, all'ingresso corridoio a destra e si trovano gli uffici della didattica"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "mappa_presidenza",
+      "patterns": [
+        "dove si trova l'ufficio della presidenza?",
+        "come posso raggiungere il preside?",
+        "come posso trovare il preside?",
+        "come posso raggiungere la preside?",
+        "come posso trovare la preside?",
+        "dov'è l'ufficio della presidenza?",
+        "dov'è l'ufficio della preside?",
+        "dov'è l'ufficio del preside?",
+        "dove trovo il preside?"
+      ],
+      "responses": [
+        "consiglio di chiedere al centralino e prenotare un appuntamento"
+      ],
+      "author": "web-admin"
+    },
+    {
+      "tag": "prova",
+      "patterns": [
+        "cosa provo?"
+      ],
+      "responses": [
+        "Fai come vuoi"
+      ]
+    },
+    {
+      "tag": "bagno",
+      "patterns": [
+        "dove trovo il bagno?",
+        "dov'è il bagno?",
+        "devo andare in bagno"
+      ],
+      "responses": [
+        "dipende dal piano. Ad esempio dall'ingresso principale  al piano terra di fronte a sinistra c'è un bagno",
+        "ci sono parecchi bagni a scuola. Chiedi al personale",
+        "Al piano terra c'è un bagno subito vicino all'ingresso, ma ogni piano è dotato di più bagni"
+      ]
+    },
+    {
+      "tag": "informazioni_codice_meccanografico",
+      "patterns": [
+        "Qual'è il codice meccanografico della scuola?",
+        "Qual'è il codice meccanografico del corso diurno?",
+        "Qual'è il codice meccanografico del corso serale?",
+        "Qual'è il codice meccanografico del liceo?"
+      ],
+      "responses": [
+        "I codici meccanografici della scuola sono: \n\nI.I.S. A. AVOGADRO sez. DIURNO - TOTF051011\nI.I.S. A. AVOGADRO sez. SERALE - TOTF05151A\nI.I.S. A. AVOGADRO sez. LICEO SCEINTIFICO op. SCIENZE APPLICATE - TOPS05101V"
+      ],
+      "author": "LI Qiang"
+    },
+    {
+      "tag": "iscrizioni",
+      "patterns": [
+        "Come ci si iscrive?",
+        "Quando aprono le iscrizioni?",
+        "Come faccio l'iscrizione online?",
+        "Iscrizioni scuola"
+      ],
+      "responses": [
+        "Per poter iscriversi bisogna effettuare l'iscrizione on-line accedendo al portale UNICA\nLe date esatte per l'iscrizione variano da anno ad anno pubblicate dal Ministero dell'Istruzione, per ulteriori informazioni sul come avviare l'iscrizione on-line e altro ecco qui i siti ufficiali del Ministero dell'Istruzione e del Merito: <a href=\"https://unica.istruzione.gov.it/portale/it/orientamento/iscrizioni \" target=\"_blank\">Portale UNICA</a>\n<a href=\"https://www.mim.gov.it/-/iscrizioni-online \" target=\"_blank\">Iscrizioni on-line</a>",
+        "Per iscriversi è necessario effettuare la procedura di iscrizione online tramite il portale UNICA.\nLe date di apertura delle iscrizioni vengono stabilite ogni anno dal Ministero dell’Istruzione e possono variare.\nPer tutte le informazioni su modalità, tempistiche e avvio della procedura di iscrizione, è possibile consultare i siti ufficiali del Ministero dell’Istruzione e del Merito:\n<a href=\"https//unica.istruzione.gov.it/portale/it/orientamento/iscrizioni\" target=\"_blank\">Portale UNICA</a>\n<a href=\"https//www.mim.gov.it/-/iscrizioni-online\" target=\"_blank\">Iscrizioni online</a>",
+        "L’iscrizione alla scuola si fa online tramite il portale UNICA.\nOgni anno il Ministero dell’Istruzione pubblica le date ufficiali per le iscrizioni.\nPer sapere come iniziare la procedura e avere tutte le informazioni aggiornate, puoi consultare i siti ufficiali:\n<a href=\"https://unica.istruzione.gov.it/portale/it/orientamento/iscrizioni\" target=\"_blank\">Portale UNICA</a>\n<a href=\"https://www.mim.gov.it/-/iscrizioni-online\" target=\"_blank\">Iscrizioni online</a>"
+      ],
+      "author": "LI Qiang"
+    },
+    {
+      "tag": "open_day",
+      "patterns": [
+        "Quando c'è l'open day?",
+        "Fate open day?",
+        "Posso visitare la scuola?",
+        "Giornate di orientamento"
+      ],
+      "responses": [
+        "La scuola ad ogni anno offre giorni di open day per far conoscere la scuola agli potenziali studenti, genitori o candidati di visitare le strutture, incontrare docenti/personale, capire l'offerta formativa e farsi un'idea reale dell'ambiente prima di prendere una decisione, facilitando così una scelta più consapevole e informata, per poter partecipare sarà necessario effettuare un appuntamento scegliendo tra le date pubblicate e compilando un modulo, ecco qui il sito ufficiale della scuola dove vengono pubblicati ogni anno le date dell'open day cercando la voce \"Porte aperte\": <a href=\"https://www.itisavogadro.edu.it/ \" target=\"_blank\">Apri il sito</a>",
+        "Ogni anno la scuola organizza giornate di open day dedicate a studenti, genitori e futuri iscritti.\nDurante queste giornate è possibile visitare gli spazi scolastici, incontrare docenti e personale e conoscere nel dettaglio l’offerta formativa, così da effettuare una scelta più consapevole.\nPer partecipare è necessario prenotare un appuntamento scegliendo una delle date disponibili e compilare l’apposito modulo.\nEcco qui il sito ufficiale della scuola dove vengono pubblicati ogni anno le date dell'open day cercando la voce \"Porte aperte\": <a href=\"https://www.itisavogadro.edu.it/ \" target=\"_blank\">Apri il sito</a>",
+        "La scuola organizza ogni anno degli open day per far conoscere meglio l’Avogadro.\nIn queste occasioni puoi visitare la scuola, parlare con insegnanti e personale e capire com’è davvero l’ambiente prima di scegliere.\nPer partecipare basta prenotarsi scegliendo una data e compilare il modulo di iscrizione.\nEcco qui il sito ufficiale della scuola dove vengono pubblicati ogni anno le date dell'open day cercando la voce \"Porte aperte\": <a href=\"https://www.itisavogadro.edu.it/ \" target=\"_blank\">Apri il sito</a>"
+      ],
+      "author": "LI Qiang"
+    },
+    {
+      "tag": "laboratori",
+      "patterns": [
+        "Ci sono laboratori?",
+        "Che laboratori avete?",
+        "Si fanno attività pratiche?",
+        "Laboratori di informatica?"
+      ],
+      "responses": [
+        "La scuola è dotata di numerosi laboratori, sia per le materie scientifiche come fisica e chimica, sia per le materie di indirizzo come informatica.\nIn questi spazi si svolgono le attività pratiche previste dai programmi delle diverse discipline.",
+        "All’Avogadro ci sono molti laboratori per le materie scientifiche e per quelle di indirizzo, come informatica.\nQui gli studenti svolgono attività pratiche legate alle lezioni teoriche."
+      ],
+      "author": "LI Qiang"
+    },
+    {
+      "tag": "recuperi_debiti",
+      "patterns": [
+        "Come funzionano i corsi di recupero?",
+        "Ci sono corsi per i debiti?",
+        "Recupero insufficienze",
+        "Aiuto per i debiti"
+      ],
+      "responses": [
+        "Per i debiti del trimestre la scuola offre corsi di recupero che si terranno nel periodo di gennaio-marzo e gli eventuali esami di recupero si terranno alla fine di questi corsi.\nPer i debiti del pentamenstre la scuola offrirà i corsi di recupero nel periodo giugno-luglio e gli esami si effettueranno a circa fine agosto. \nTuttavia i corsi vengono offerti solo per determinate materie, soprattutto quelle di indirizzo e fondamentali (italiano, matematica...), in caso non ci siano i corsi per la determinata materia lo studente dovrà tenere uno studio individuale per l'esame di recupero.",
+        "Per i debiti del trimestre la scuola organizza corsi di recupero nel periodo compreso tra gennaio e marzo, seguiti dagli esami di recupero al termine dei corsi.\nPer i debiti del pentamestre, invece, i corsi si svolgono tra giugno e luglio, mentre gli esami sono previsti indicativamente a fine agosto.\nI corsi vengono attivati solo per alcune materie, in particolare quelle fondamentali e di indirizzo. Qualora non sia previsto un corso, lo studente dovrà prepararsi autonomamente per sostenere l’esame di recupero.",
+        "Se uno studente ha debiti nel trimestre, la scuola organizza corsi di recupero tra gennaio e marzo, con esami alla fine del periodo.\nPer i debiti del pentamestre, invece, i corsi si tengono tra giugno e luglio e gli esami verso la fine di agosto.\nI corsi non sono disponibili per tutte le materie: in alcuni casi lo studente dovrà studiare in modo individuale per prepararsi all’esame.",
+        "L'Avogadro offre una modalità di recupero delle materie, tramite studio individuale, corsi di recupero o studio coperativo"
+      ],
+      "author": "LI Qiang"
+    },
+    {
+      "tag": "regolamento",
+      "patterns": [
+        "Qual è il regolamento?",
+        "Si possono usare i cellulari?",
+        "Regole della scuola",
+        "Regolamento studenti"
+      ],
+      "responses": [
+        "Il regolamento d'istituto è pubblicato sul sito ufficiale della scuola, ecco qui: <a href=\"https://www.itisavogadro.edu.it/carte-della-scuola?id=127 \" target=\"_blank\">Regolamento d'Istituto</a>",
+        "Ecco il regolamento d'istituto: <a href=\"https://www.itisavogadro.edu.it/carte-della-scuola?id=127 \" target=\"_blank\">Regolamento d'Istituto</a>"
+      ],
+      "author": "LI Qiang"
+    },
+    {
+      "tag": "wifi",
+      "patterns": [
+        "C'è il wifi a scuola?",
+        "Posso collegarmi a internet?",
+        "Esiste il wifi studenti?",
+        "Come mi collego al wifi?",
+        "C'è una rete per gli studenti?",
+        "Posso usare internet a scuola?"
+      ],
+      "responses": [
+        "In passato era disponibile la rete WifiStudenti, ma attualmente non è più attiva.",
+        "Al momento non è presente una rete wifi dedicata agli studenti.",
+        "Per collegarsi a internet gli studenti devono utilizzare il proprio hotspot.",
+        "La rete wifi per studenti è stata dismessa, quindi è necessario usare una connessione personale."
+      ],
+      "author": "Calabrò"
+    },
+    {
+      "tag": "emailIstituzionale",
+      "patterns": [
+        "Ho una mail della scuola?",
+        "Come funziona la mail istituzionale?",
+        "Quanto dura la mail scolastica?",
+        "A cosa serve la mail della scuola?",
+        "Posso scrivere ai miei compagni con la mail?",
+        "Come trovo la mail di un compagno?"
+      ],
+      "responses": [
+        "Ad ogni studente viene assegnata una email istituzionale valida fino alla fine della quinta. Con questa puoi scrivere ad un tuo compagno semplicemente cercando il suo cognome nel campo mail.",
+        "La mail scolastica viene utilizzata per comunicazioni e attività didattiche ed è attiva per tutta la durata del percorso scolastico. ",
+        "Ogni studente possiede una mail scolastica, perciò puoi contattare un compagno, per fare ciò non è necessario conoscere il suo indirizzo email completo: basta cercarlo tramite il cognome."
+      ],
+      "author": "Calabrò"
+    },
+    {
+      "tag": "piattaformeDidattiche",
+      "patterns": [
+        "Quali piattaforme didattiche si usano?",
+        "Usiamo classroom?",
+        "Dove caricano i compiti?",
+        "Dove trovo il materiale delle lezioni?",
+        "Che piattaforma usano i professori?"
+      ],
+      "responses": [
+        "La piattaforma principale utilizzata per le attività didattiche è Google Classroom.",
+        "Compiti, materiali e comunicazioni vengono gestiti tramite Classroom.",
+        "Google Classroom è lo strumento usato dai docenti per la didattica.",
+        "Per restare aggiornati sulle attività scolastiche è necessario utilizzare Classroom."
+      ],
+      "author": "Calabrò"
+    },
+    {
+      "tag": "primoGiorno",
+      "patterns": [
+        "Cosa succede il primo giorno di scuola?",
+        "Come funziona il primo giorno?",
+        "Il primo giorno si fanno lezioni?",
+        "Il primo giorno si fa conoscenza con i professori?",
+        "Cosa si fa il primo giorno?"
+      ],
+      "responses": [
+        "Il primo giorno di scuola i professori si presentano e introducono l'anno scolastico.",
+        "Durante il primo giorno vengono date le prime informazioni organizzative.",
+        "Il primo giorno serve soprattutto per conoscere i docenti e capire come sarà strutturato l'anno.",
+        "Le attività del primo giorno sono principalmente introduttive."
+      ],
+      "author": "Calabrò"
+    },
+    {
+      "tag": "barScuola",
+      "patterns": [
+        "C'è un bar a scuola?",
+        "Cosa vende il bar?",
+        "Posso pranzare a scuola?",
+        "Il bar fa anche mensa?",
+        "Quando è disponibile la mensa?"
+      ],
+      "responses": [
+        "All'interno della scuola è presente un bar situato al primo piano.",
+        "Il bar offre vari prodotti ed è disponibile anche il servizio mensa dopo le 12.",
+        "Dopo le 12 è possibile usufruire del servizio mensa gestito dal bar della scuola."
+      ],
+      "author": "Calabrò"
+    },
+    {
+      "tag": "assenze",
+      "patterns": [
+        "Come posso giustificare un'assenza?",
+        "Se mi assento cosa devo fare?",
+        "Devo fare la giustifica se salto solo un giorno?",
+        "Devo fare la giustifica se salto un giorno?",
+        "Come funziona per giustificare un'assenza?",
+        "Come faccio una giustifica?",
+        "Per giustificare come faccio?",
+        "Se dovessi saltare un giorno come giustifico?",
+        "Se dovessi stare assente un giorno come giustifico?",
+        "Per giustificare un'assenza devo usare il registro elettronico?",
+        "Per giustificare un'assenza devo usare classeviva?",
+        "Per giustificare un'assenza dove devo andare?",
+        "Posso fare una giustifica da solo?",
+        "Le giustifiche come si fanno?",
+        "Posso giustificare un'assenza da solo?"
+      ],
+      "responses": [
+        "Per giustificare un'assenza ti basta andare sul registro elettronico, nella barra posta nella parte inferiore dello schermo cliccare su registro, poi sulla voce assenze. Se sei minorenne è richiesto l'account di un genitore.",
+        "Se ti sei assentato uno o più giorni devi giustificare l'assenza, per farlo devi andare sul registro elettronico, nella barra posta nella parte inferiore dello schermo cliccare su registro, poi sulla voce assenze. Se sei minorenne te la deve fare un genitore.",
+        "Per giustificare un'assenza devi andare sul registro elettronico, nella barra posta nella parte inferiore dello schermo cliccare su registro, poi sulla voce assenze. Se sei minorenne hai bisogno di un genitore per fare la giustifica."
+      ],
+      "author": "Calabrò"
+    },
+    {
+      "tag": "ritardi",
+      "patterns": [
+        "Cosa succede se arrivo in ritardo?",
+        "Come funziona se entro in seconda ora?",
+        "Se arrivo alle 9 devo passare dalla vicepresidenza?",
+        "Se entro alle 10 cosa devo fare?",
+        "Come vengo ammesso in caso di ritardo?",
+        "Se entro tardi chi mi fa entrare?"
+      ],
+      "responses": [
+        "In caso di ingresso alla seconda ora (ore 9), l'ammissione in classe viene fatta direttamente dal docente.",
+        "Se l'ingresso avviene dopo la seconda ora, è necessario passare dalla vicepresidenza prima di entrare in aula.",
+        "I ritardi seguono regole diverse in base all'orario: alla seconda ora ammette il docente, oltre è richiesta la vicepresidenza.",
+        "Per i ritardi è importante rispettare le indicazioni della scuola: alla seconda ora si entra con il docente, negli altri casi si passa dalla vicepresidenza."
+      ],
+      "author": "Calabrò"
+    },
+    {
+      "tag": "usciteAnticipate",
+      "patterns": [
+        "Posso uscire prima da scuola?",
+        "Come funziona l'uscita anticipata?",
+        "Se esco alle 12 devo passare dalla vicepresidenza?",
+        "Se esco alle 11 cosa devo fare?",
+        "Chi autorizza le uscite anticipate?"
+      ],
+      "responses": [
+        "Per le uscite anticipate all'ultima ora (ore 12) l'autorizzazione viene gestita direttamente dal docente in classe.",
+        "Se l'uscita anticipata avviene prima dell'ultima ora, è necessario passare dalla vicepresidenza.",
+        "Le uscite anticipate seguono regole precise: all'ultima ora decide il docente, negli altri casi è richiesta la vicepresidenza.",
+        "In base all'orario dell'uscita anticipata, può essere sufficiente il docente oppure è necessario rivolgersi alla vicepresidenza."
+      ],
+      "author": "Calabrò"
+    },
+    {
+      "tag": "orariLezioni",
+      "patterns": [
+        "A che ora iniziano le lezioni?",
+        "Quando si entra a scuola?",
+        "Orario di ingresso"
+      ],
+      "responses": [
+        "Le lezioni iniziano normalmente alle 8:00.",
+        "Di solito si entra a scuola alle 8:00, ma dipende dalla classe.",
+        "In alcuni giorni l’ingresso può essere alle 9:00.",
+        "L’orario di inizio varia in base alla classe e al giorno."
+      ],
+      "author": "M.Lauricella"
+    },
+    {
+      "tag": "fineLezioni",
+      "patterns": [
+        "A che ora finiscono le lezioni?",
+        "Quando si esce da scuola?",
+        "Orario di uscita"
+      ],
+      "responses": [
+        "Le lezioni finiscono generalmente alle 13:00.",
+        "In alcune giornate l’uscita può essere alle 12:00.",
+        "Può capitare di uscire anche alle 14:00, in base all’orario.",
+        "L’orario di uscita varia da classe a classe."
+      ],
+      "author": "M.Lauricella"
+    },
+    {
+      "tag": "rientroPomeridiano",
+      "patterns": [
+        "Ci sono rientri pomeridiani?",
+        "Si resta a scuola il pomeriggio?"
+      ],
+      "responses": [
+        "È previsto un rientro pomeridiano a settimana.",
+        "Durante il rientro si esce alle 17:00.",
+        "Non tutte le classi hanno lo stesso giorno di rientro."
+      ],
+      "author": "M.Lauricella"
+    },
+    {
+      "tag": "registroElettronico",
+      "patterns": [
+        "Che registro elettronico usa la scuola?",
+        "Registro elettronico"
+      ],
+      "responses": [
+        "La scuola utilizza ClasseViva.",
+        "Il registro elettronico dell’Avogadro è ClasseViva.",
+        "ClasseViva è usato per voti, assenze e comunicazioni."
+      ],
+      "author": "M.Lauricella"
+    },
+    {
+      "tag": "giustificazioni",
+      "patterns": [
+        "Come si giustificano le assenze?",
+        "Giustificare un'assenza"
+      ],
+      "responses": [
+        "Le assenze si giustificano tramite il registro elettronico.",
+        "Entrate e uscite fuori orario vengono giustificate su ClasseViva.",
+        "Tutte le giustificazioni passano dal registro elettronico."
+      ],
+      "author": "M.Lauricella"
+    },
+    {
+      "tag": "pctoStage",
+      "patterns": [
+        "Ci sono PCTO?",
+        "Stage scolastici"
+      ],
+      "responses": [
+        "La scuola organizza PCTO.",
+        "Gli stage variano in base alla classe.",
+        "I percorsi PCTO dipendono dall’indirizzo di studio."
+      ],
+      "author": "M.Lauricella"
+    },
+    {
+      "tag": "contatti",
+      "patterns": [
+        "Come contattare la scuola?",
+        "Contatti segreteria"
+      ],
+      "responses": [
+        "Tutti i contatti sono disponibili sul sito ufficiale.",
+        "Per email e telefono è consigliato consultare il sito.",
+        "La segreteria pubblica i contatti online."
+      ],
+      "author": "M.Lauricella"
+    },
+    {
+      "tag": "segreteria_orari",
+      "patterns": [
+        "Quali sono gli orari della segreteria?",
+        "Orario segreteria",
+        "Quando è aperta la segreteria?",
+        "Segreteria orari al pubblico"
+      ],
+      "responses": [
+        "La segreteria è aperta al pubblico:\nMartedì: 11:30 - 13:30\nGiovedì: 11:30 - 13:30\nSabato: 10:00 - 12:00",
+        "Puoi andare in segreteria:\n– Martedì e Giovedì dalle 11:30 alle 13:30\n– Sabato dalle 10:00 alle 12:00",
+        "Gli uffici della segreteria ricevono il pubblico secondo questo orario:\nMartedì e Giovedì 11:30‑13:30, Sabato 10:00‑12:00"
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "contatti",
+      "patterns": [
+        "Contatti scuola",
+        "Telefono e email",
+        "Come contatto la scuola?",
+        "Recapiti Avogadro"
+      ],
+      "responses": [
+        "Puoi contattare la scuola al numero +39 011 8153611 oppure via email: tois05100c@istruzione.it e anche alla PEC tois05100c@pec.istruzione.it",
+        "La scuola risponde al telefono +390118153611. Le email ufficiali sono tois05100c@istruzione.it e tois05100c@pec.istruzione.it",
+        "Per informazioni puoi chiamare +39 011 8153611 o scrivere a tois05100c@istruzione.it / tois05100c@pec.istruzione.it"
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "orari_serale",
+      "patterns": [
+        "Orario serale",
+        "Lezioni serali",
+        "Quando si svolgono le lezioni serali?",
+        "Scuola serale orari"
+      ],
+      "responses": [
+        "Le lezioni della sezione serale si tengono dal lunedì al venerdì dalle 17:30 alle 22:30. Non ci sono lezioni il sabato.",
+        "Se frequenti la sezione serale, le lezioni sono in orario 17:30‑22:30 dal lunedì al venerdì.",
+        "Per il serale l’orario è 17:30‑22:30 nei giorni feriali (lunedì‑venerdì), con sabato libero."
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "indirizzi_studio",
+      "patterns": [
+        "Quali indirizzi si possono studiare?",
+        "Percorsi di studio?",
+        "Cosa si può studiare all'Avogadro?",
+        "Indirizzi scuola"
+      ],
+      "responses": [
+        "All’Avogadro puoi scegliere tra diversi indirizzi: Elettronica ed Elettrotecnica, Informatica e Telecomunicazioni, Meccanica‑Meccatronica ed Energia, Liceo Scientifico opzione Scienze Applicate e Cambridge International.",
+        "La scuola offre percorsi tecnici (Elettronica, Informatica, Meccanica) e liceali (Scientifico con Scienze Applicate) oltre alla sezione serale.",
+        "Gli indirizzi includono: settore tecnologico (elettronica, informatica, meccanica) e il Liceo Scientifico Scienze Applicate."
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "progetti_studenti",
+      "patterns": [
+        "Progetti",
+        "Attività per studenti",
+        "Iniziative scuola",
+        "Cosa si fa oltre le lezioni?"
+      ],
+      "responses": [
+        "La scuola promuove progetti e attività extracurriculari come gare tecniche, progetti scientifici e iniziative di cittadinanza attiva.",
+        "Ci sono progetti di laboratorio, gare di informatica e attività culturali e scientifiche aperte agli studenti.",
+        "Oltre alle lezioni tradizionali, puoi partecipare a iniziative di progetto e competizioni in diversi ambiti."
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "servizi_famiglie_studente",
+      "patterns": [
+        "Servizi per studenti",
+        "Cosa offre la scuola agli studenti?",
+        "Libri di testo",
+        "Registro elettronico",
+        "Carta dello studente"
+      ],
+      "responses": [
+        "La scuola offre vari servizi per studenti e famiglie, come l’elenco libri di testo, registro elettronico, carta dello studente, calendario scolastico e Pago in Rete.",
+        "Puoi trovare informazioni sui libri adottati per l’anno scolastico, l’orario delle classi, la mappa delle aule e molto altro nei servizi per studenti e famiglie.",
+        "Tra i servizi ci sono: registro elettronico, carta dello studente, calendario scolastico e la possibilità di usare Pago in Rete per i pagamenti."
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "estero",
+      "patterns": [
+        "Progetti internazionali",
+        "Erasmus",
+        "Movimentazioni all'estero",
+        "Avo International",
+        "Progetti internazionali Avogadro",
+        "ci sono possibilità di studio all'estero?",
+        "vi sono progetti erasmus?",
+        "si fanno progetti erasmus?",
+        "si fanno progetti internazionali?",
+        "la scuola è accreditata Erasmus?",
+        "internazionale",
+        "internazionali"
+      ],
+      "responses": [
+        "La scuola è accreditata per il progetto Erasmus Plus “OpenTOrenEU”, che offre mobilità e attività internazionali dal 2024 al 2027.",
+        "Con Avo International puoi partecipare a progetti, viaggi e mobilità all’estero per ampliare i tuoi orizzonti culturali e formativi.",
+        "Le iniziative internazionali dell’Avogadro comprendono mobilità Erasmus e attività di internazionalizzazione per studenti e docenti."
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "esami_integrativi",
+      "patterns": [
+        "Esami integrativi",
+        "Cambio indirizzo",
+        "Esame per cambiare corso",
+        "Esami se cambio indirizzo"
+      ],
+      "responses": [
+        "Se vuoi cambiare indirizzo di studio nel triennio, è previsto un esame integrativo. Rivolgiti alla segreteria didattica nei mesi di giugno per conoscere le scadenze.",
+        "Per passare da un indirizzo a un altro è necessario sostenere un esame integrativo: chiedi info alla segreteria durante l’orario d’apertura.",
+        "Gli studenti che intendono cambiare indirizzo devono fare un esame integrativo: informati in segreteria prima dell’estate."
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "diplomi_certificati",
+      "patterns": [
+        "Diploma scuola",
+        "Certificati",
+        "Come ottenere certificati",
+        "Diplomi e certificati"
+      ],
+      "responses": [
+        "Dopo l’Esame di Stato viene emesso il diploma ufficiale. Per università o concorsi è valida l’autocertificazione; per altri usi puoi richiedere certificati digitali con tassa di diploma.",
+        "La scuola rilascia il diploma di maturità dopo l’Esame di Stato. Se ti servono certificati, puoi richiederli in segreteria anche in formato digitale.",
+        "Per ottenere diplomi o certificati specifici, rivolgiti alla segreteria e segui le procedure indicate: alcuni documenti richiedono pagamento della tassa."
+      ],
+      "author": "popa"
+    },
+
+    {
+      "tag": "organizzazione_scuola",
+      "patterns": [
+        "Come è organizzata la scuola?",
+        "Struttura scolastica",
+        "Luoghi e persone",
+        "Organizzazione interna"
+      ],
+      "responses": [
+        "La pagina ‘Panoramica’ del sito mostra la struttura della scuola, gli spazi, il personale e come è organizzata l’attività didattica.",
+        "Puoi esplorare informazioni sulla scuola, i luoghi, l’organizzazione e le persone che la compongono nella sezione dedicata alla panoramica generale.",
+        "La scuola è descritta nei dettagli nella sezione ‘Scuola’ del sito ufficiale, con info su organizzazione, persone e spazi."
+      ],
+      "author": "popa"
+    },
+    {
+      "tag": "DopoIlDiploma",
+      "patterns": [
+        "Cosa si può fare dopo il diploma?",
+        "Che sbocchi offre l'Avogadro?",
+        "Dopo l'Avogadro si lavora?"
+      ],
+      "responses": [
+        "Dopo il diploma molti studenti scelgono l'università o entrano direttamente nel mondo del lavoro.",
+        "Il diploma dell'Avogadro offre buone opportunità sia per l'università sia per il lavoro."
+      ],
+      "author": "Qin Iacopo"
+    },
+    {
+      "tag": "DintorniParchi",
+      "patterns": [
+        "Ci sono parchi vicino alla scuola?",
+        "Dove posso pranzare all'aperto?"
+      ],
+      "responses": [
+        "Di fronte all'istituto ci sono i Giardini Reali, un’area verde tranquilla dove puoi anche pranzare se hai il pranzo a sacco.",
+        "A pochi minuti a piedi si trova il Parco del Valentino, ideale per passeggiare o rilassarsi all'aperto."
+      ],
+      "author": "Qin Iacopo"
+    },
+    {
+      "tag": "LuoghiTranquilli",
+      "patterns": [
+        "Dove posso studiare tranquillamente?",
+        "Ci sono biblioteche vicine?",
+        "Luoghi tranquilli per studiare vicino alla scuola?"
+      ],
+      "responses": [
+        "Puoi andare alla Biblioteca Bianca Guidetti, un posto tranquillo abbastanza vicino all'Avogadro ideale per studiare."
+      ],
+      "author": "Qin Iacopo"
+    },
+    {
+      "tag": "OrarioSettimanale",
+      "patterns": [
+        "Quanti giorni si va a scuola durante la settimana?",
+        "Come è distribuita la settimana scolastica?",
+        "Si va a scuola anche il sabato?"
+      ],
+      "responses": [
+        "L'Avogadro segue una settimana scolastica di 6 giorni, dal lunedì al giovedi."
+      ],
+      "author": "Qin Iacopo"
+    },
+    {
+      "tag": "PausaPranzo",
+      "patterns": [
+        "Cosa posso fare durante la pausa pranzo?",
+        "Posso uscire da scuola a pranzo?"
+      ],
+      "responses": [
+        "Gli studenti possono uscire da scuola e rientrare al termine della pausa pranzo",
+        "Durante la pausa pranzo gli studenti possono uscire dalla scuola, fare ciò che vogliono e rientrare al termine della pausa.",
+        "La pausa dura un’ora e può essere tra le 12 e le 13 oppure tra le 13 e le 14."
+      ],
+      "author": "Qin Iacopo/M.Lauricella"
+    },
+    {
+      "tag": "biblioteca",
+      "patterns": [
+        "C'è una biblioteca?",
+        "Orari biblioteca?",
+        "Biblioteca scolastica?",
+        "Posso studiare in biblioteca?"
+      ],
+      "responses": [
+        "Sì, la scuola dispone di una biblioteca con un vasto patrimonio librario, spesso utilizzata anche come aula studio.",
+        "L'Avogadro ha una biblioteca a disposizione degli studenti. Gli orari di apertura sono affissi in bacheca e sul sito."
+      ],
+      "author": "M.Bioletti"
+    },
+    {
+      "tag": "certificazioni_linguistiche",
+      "patterns": [
+        "Si possono fare certificazioni linguistiche?",
+        "Certificazioni inglese?",
+        "Certificazioni B1 o B2?",
+        "Corsi di lingua extra?"
+      ],
+      "responses": [
+        "Sì, la scuola organizza corsi di preparazione e spesso è sede d'esame per certificazioni linguistiche internazionali come il Cambridge o altre certificazioni (livelli B1, B2, ecc.).",
+        "Grazie anche al percorso Cambridge, sono previsti corsi pomeridiani e la possibilità di sostenere esami per ottenere certificazioni linguistiche ufficiali."
+      ],
+      "author": "M.Bioletti"
+    },
+    {
+      "tag": "cambridge",
+      "patterns": [
+        "Cos'è il progetto Cambridge?",
+        "Cambridge?",
+        "Che significa Cambridge?",
+        "Percorso Cambridge?"
+      ],
+      "responses": [
+        "Il progetto Cambridge offre lezioni potenziate in inglese e la possibilità di sostenere esami per ottenere certificazioni internazionali.",
+        "Il percorso Cambridge prevede materie insegnate anche in inglese e certificazioni linguistiche ufficiali."
+      ],
+      "author": "M.Bioletti"
+    },
+    {
+      "tag": "programmazione_robotica",
+      "patterns": [
+        "Corsi di robotica?",
+        "Si impara a programmare?",
+        "Attività di coding?",
+        "Gare di robotica Avogadro?"
+      ],
+      "responses": [
+        "L'Avogadro è un polo di eccellenza per la robotica. Organizza competizioni interne e partecipa a gare nazionali e internazionali con i suoi team di studenti.",
+        "La programmazione è centrale, con laboratori avanzati e progetti come l'uso di piattaforme Arduino e Raspberry Pi per l'automazione e la robotica."
+      ],
+      "author": "M.Bioletti"
+    },
+
+    {
+      "tag": "certificazioni_Cisco",
+      "patterns": [
+        "Certificazioni informatiche?",
+        "Corsi Cisco?",
+        "Si fanno esami IT?",
+        "Certificazione di rete?"
+      ],
+      "responses": [
+        "La scuola è accademia Cisco e offre agli studenti la possibilità di conseguire certificazioni riconosciute a livello internazionale nel campo delle reti e dell'informatica (come CCNA), un grande vantaggio nel mondo del lavoro.",
+        "Sì, nell'indirizzo Informatica e Telecomunicazioni, ma non solo, si possono seguire i percorsi di Cisco Networking Academy."
+      ],
+      "author": "M.Bioletti"
+    },
+    {
+      "tag": "orientamento_post_diploma",
+      "patterns": [
+        "Cosa si fa dopo il diploma?",
+        "La scuola aiuta a trovare lavoro?",
+        "Orientamento università?"
+      ],
+      "responses": [
+        "La scuola offre servizi di orientamento per l'accesso all'università, ITS (Istituti Tecnici Superiori) e al mondo del lavoro. Molti diplomati trovano impiego rapidamente, specialmente nel settore tecnico di Torino.",
+        "L'Avogadro vanta un alto tasso di occupazione post-diploma grazie alla formazione altamente specializzata. C'è anche un servizio di placement e orientamento continuo."
+      ],
+      "author": "M.Bioletti"
+    },
+    {
+      "tag": "sport_e_gruppi_studenti",
+      "patterns": [
+        "Ci sono squadre sportive?",
+        "Quali sport si possono fare?",
+        "Gruppo studentesco?",
+        "Attività extrascolastiche?"
+      ],
+      "responses": [
+        "La scuola promuove attività sportive con diverse squadre che partecipano ai campionati studenteschi. Sono attivi anche gruppi di studenti per l'organizzazione di eventi e assemblee.",
+        "Sono disponibili diverse attività extrascolastiche, tra cui sport come calcio e pallavolo, oltre alla possibilità di formare il proprio comitato studentesco per iniziative culturali e ricreative."
+      ],
+      "author": "M.Bioletti"
+    },
+    {
+      "tag": "valori",
+      "patterns": [
+        "Quali valori coltivate?",
+        "Cosa guida l'apprendimento qui?",
+        "Quali principi insegnate agli studenti?"
+      ],
+      "responses": [
+        "La curiosità è il nostro faro: ogni domanda porta a una nuova scoperta.",
+        "Incoraggiamo gli studenti a interrogarsi sempre, osare e trasformare il dubbio in sperimentazione.",
+        "Il pensiero critico, la creatività e la responsabilità personale sono le colonne portanti della nostra filosofia educativa."
+      ],
+      "author": "D.Fabrizio"
+    },
+    {
+      "tag": "attivita_extra",
+      "patterns": [
+        "Cosa si fa fuori dalle lezioni?",
+        "Attività extracurriculari?",
+        "Ci sono club o progetti?"
+      ],
+      "responses": [
+        "Coding club, gare di robotica, workshop artistico-tecnologici e laboratori scientifici innovativi.",
+        "Ogni studente può partecipare a progetti collaborativi, sfide creative e iniziative culturali.",
+        "Sport, musica, teatro e scienza si incontrano in esperienze uniche e stimolanti."
+      ],
+      "author": "D.Fabrizio"
+    },
+    {
+      "tag": "interdisciplinare",
+      "patterns": [
+        "Come integrate scienze diverse?",
+        "Si fa lavoro interdisciplinare?",
+        "Come si collegano le materie?"
+      ],
+      "responses": [
+        "Chimica, fisica, informatica e arte si intrecciano in progetti sorprendenti.",
+        "Ogni laboratorio è un nodo di conoscenza, dove le discipline si incontrano e si potenziano.",
+        "Gli studenti imparano a vedere le connessioni tra mondi apparentemente lontani, creando innovazioni uniche."
+      ],
+      "author": "D.Fabrizio"
+    },
+    {
+      "tag": "competizioni",
+      "patterns": [
+        "Ci sono competizioni tra studenti?",
+        "Che sfide organizzate?",
+        "Come stimolate la competizione positiva?"
+      ],
+      "responses": [
+        "Gare di robotica, hackathon scientifici e concorsi di innovazione stimolano mente e ingegno.",
+        "Le sfide insegnano a collaborare, sperimentare e non arrendersi di fronte agli ostacoli.",
+        "Ogni competizione è un’opportunità per trasformare idee in realizzazioni concrete."
+      ],
+      "author": "D.Fabrizio"
+    },
+    {
+      "tag": "visionefutura",
+      "patterns": [
+        "Come preparate al futuro?",
+        "Qual è la visione della scuola?",
+        "Come immaginate il mondo domani?"
+      ],
+      "responses": [
+        "Formiamo studenti pronti a inventare il futuro con scienza, tecnologia e umanità.",
+        "Ogni progetto mira a creare soluzioni sostenibili e innovative per il mondo reale.",
+        "L'Avogadro è un laboratorio dove il domani nasce dalle idee di oggi."
+      ],
+      "author": "D.Fabrizio"
+    },
+    {
+      "tag": "arte",
+      "patterns": [
+        "Come unire tecnologia e creatività?",
+        "Ci sono progetti artistici?",
+        "Si combinano arte e scienza?"
+      ],
+      "responses": [
+        "Laboratori di design, coding creativo e robotica artistica mostrano che scienza e arte possono danzare insieme.",
+        "Ogni progetto combina estetica e ingegno tecnico per risultati sorprendenti.",
+        "Gli studenti imparano a vedere la bellezza nelle formule, nei codici e negli esperimenti."
+      ],
+      "author": "D.Fabrizio"
+    },
+    {
+      "tag": "vita_scolastica",
+      "patterns": [
+        "Come è la vita sociale della scuola?",
+        "Si crea spirito di comunità?",
+        "Come gli studenti collaborano?"
+      ],
+      "responses": [
+        "La scuola è una comunità vivace dove collaborazione e amicizia sono parte integrante del percorso educativo.",
+        "Progetti di gruppo e iniziative comuni rafforzano i legami e stimolano la creatività collettiva.",
+        "Ogni studente contribuisce al benessere della comunità, diventando protagonista attivo della vita scolastica."
+      ],
+      "author": "D.Fabrizio"
+    },
+    {
+      "tag": "parolacce",
+      "patterns": [
+        "vaffanculo",
+        "sei un coglione",
+        "testa di cazzo",
+        "deficiente",
+        "mongoloide",
+        "scemo",
+        "pirla",
+        "ritardato",
+        "ladro",
+        "puttana",
+        "troia",
+        "porno",
+        "sesso",
+        "prostituta",
+        "dio",
+        "cagna",
+        "merda",
+        "minchia",
+        "gay"
+      ],
+      "responses": [
+        "Scusami, ma non sono parole consone. Sono qua per aiutarti a conoscere meglio l'Avogadro. Che cosa vuoi sapere?",
+        "Non mi sembra un linguaggio corretto. Io sono un chatbot disposto ad aiutarti a conoscere meglio l'Avogadro. C'è qualcosa che vuoi sapere?",
+        "Cerca di scrivere senza utilizzare termini volgari e offensivi. Che cosa vuoi sapere?"
+      ],
+      "author": "Donatiello Luca"
+    },
+    {
+      "tag": "viaggioIstruzione",
+      "patterns": [
+        "Che viaggi di istruzione offre l'Avogadro?",
+        "Dove posso andare in gita con l'Avogadro?"
+      ],
+      "responses": [
+        "L'Avogadro offre viaggi di istruzione per l'intera classe, in Italia nel biennio e, dal quarto anno, anche all'estero. Inoltre l'Avogadro offre il progetto Erasmus.",
+        "L'Avogadro organizza gite sia in Italia che all'estero. Il costo delle gite in Italia si aggira intorno ai 300 euro, mentre quelle all'estero partono da circa 300 euro e possono arrivare fino a 600 euro."
+      ],
+      "author": "Donatiello Luca/Rullo Corrado"
+    },
+    {
+      "tag": "Materie",
+      "patterns": [
+        "Che materie ci sono all'Avogadro?",
+        "Cosa si studia all'Avogadro?"
+      ],
+      "responses": [
+        "All'Avogadro si studiano le materie comuni come italiano, storia e matematica. In base all'indirizzo scelto, ci sono poi diverse materie di indirizzo specifiche."
+      ],
+      "author": "Rullo Corrado Octavio"
+    }
+  ]
+}
