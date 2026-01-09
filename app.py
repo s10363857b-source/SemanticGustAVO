@@ -20,7 +20,7 @@ CORS(app)
 # =========================
 # Carica intents.json
 # =========================
-with open("intents.json", "r", encoding="utf-8") as f:
+with open(os.path.dirname(os.path.abspath(__file__)) + "/intents.json", "r", encoding="utf-8") as f:
     intents = json.load(f)["intents"]
 
 responses = {}
@@ -246,4 +246,5 @@ if __name__ == "__main__":
         port = int(os.environ.get("PORT", 5000))
 
         app.run(host="0.0.0.0", port=port)
+
 
